@@ -11,8 +11,9 @@
 
 
 @media screen and (min-width: 992px) {
+
 footer{
-    min-width:100%;
+    min-width:1350px;
     
     display: flex;
     background-color:$gris;
@@ -76,7 +77,7 @@ footer{
 footer{
     // min-width: 778px;
     // max-width: 991px;
-width: 100%;
+    width: 950px;
 
    
 
@@ -139,7 +140,7 @@ width: 100%;
 
 
 
-@media screen and  (width < 778px) {
+@media screen and  (max-device-width: 777px) {
     
 footer{
     width: 350px;

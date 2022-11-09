@@ -6,13 +6,16 @@
    
 }
 
+
+
+
 // --CHARGEMENT DU STYLE DESKTOP--
 
 // desactivation du trio de br dans le block aside, celui ci sera activé dans la version mobile uniquement--
 .br{
     display: none;
 }
-@media screen and (min-width: 992px) {
+@media all and (min-width: 992px)  {
     
 
 html{
@@ -320,6 +323,7 @@ figcaption{
 // // ---------------------------------------
 // // --CHARGEMENT DU STYLE TABLETTE--
 // // ---------------------------------------
+// and (max-width:2000px)
 
 
 
@@ -327,11 +331,10 @@ figcaption{
 
 
 
-
-@media screen and (min-width: 778px) and (max-width: 991px){
+@media all and (min-width: 778px)and (max-width: 991px) {
     html{
-        min-width: 768px;
-        max-width: 991px;
+        min-width: auto;
+       
     }
     figcaption{
         @include margin-figcaption-last_tab;
@@ -362,7 +365,7 @@ figcaption{
                 display: flex;
                 flex-direction: column;
                 // border: 1px solid red;
-                @include taille-couleur-bloc-aside-hebergement_tab(100%,110%);
+                @include taille-couleur-bloc-aside-hebergement_tab(100%,350px);
                 margin-left: 40px;
     
                 & h1{
@@ -462,7 +465,7 @@ figcaption{
     
         .hebergements{
       
-                     @include taille-couleur-bloc-aside-hebergement_tab(100%,100%);
+                     @include taille-couleur-bloc-aside-hebergement_tab(100%,600px);
                     
                 // border:  2px solid greenyellow;
                    
@@ -616,9 +619,14 @@ figcaption{
 
 
 
+
+
 // // ------------------------------
 // // --CHARGEMENT DU STYLE mobile--
 // // ------------------------------
+// and (max-width: 991px)
+// and (max-width: 777px) 
+// all and (min-width:200px) and (max-width:777)
 
 
 
@@ -626,9 +634,7 @@ figcaption{
 
 
 
-
-
-@media screen and  (width < 778px)  {
+@media screen and  (max-device-width :777px) {
 
    
     // =========================================================//
@@ -954,3 +960,4 @@ figcaption{
     
     
 }
+

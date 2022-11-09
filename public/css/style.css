@@ -237,7 +237,7 @@
     color: white;
   }
 }
-@media screen and (width < 778px) {
+@media screen and (max-device-width: 777px) {
   .firstblock {
     display: flex;
     flex-direction: column;
@@ -375,7 +375,7 @@
   display: none;
 }
 
-@media screen and (min-width: 992px) {
+@media all and (min-width: 992px) {
   html {
     width: auto;
   }
@@ -662,10 +662,9 @@
     margin-left: 20px;
   }
 }
-@media screen and (min-width: 778px) and (max-width: 991px) {
+@media all and (min-width: 778px) and (max-width: 991px) {
   html {
-    min-width: 768px;
-    max-width: 991px;
+    min-width: auto;
   }
   figcaption {
     margin: 5px;
@@ -689,7 +688,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 110%;
+    width: 350px;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-left: 40px;
@@ -834,7 +833,7 @@
   }
   main .hebergements {
     height: 100%;
-    width: 100%;
+    width: 600px;
     background-color: #F2F2F2;
     border-radius: 20px;
   }
@@ -942,7 +941,7 @@
     margin-left: 20px;
   }
 }
-@media screen and (width < 778px) {
+@media screen and (max-device-width: 777px) {
   .br {
     display: flex;
   }
@@ -1238,7 +1237,7 @@
 }
 @media screen and (min-width: 992px) {
   footer {
-    min-width: 100%;
+    min-width: 1350px;
     display: flex;
     background-color: #F2F2F2;
     margin-top: 50px;
@@ -1294,7 +1293,7 @@
 }
 @media screen and (min-width: 778px) and (max-width: 991px) {
   footer {
-    width: 100%;
+    width: 950px;
     display: flex;
     background-color: #F2F2F2;
     margin-top: 50px;
@@ -1348,7 +1347,7 @@
     font-family: "Raleway";
   }
 }
-@media screen and (width < 778px) {
+@media screen and (max-device-width: 777px) {
   footer {
     width: 350px;
     height: auto;
