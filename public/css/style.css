@@ -59,7 +59,7 @@
   .thirdblock i {
     color: #0065FC;
     background-color: #DEEBFF;
-    border: 2px solid red;
+    border: 2px solid blue;
     border-radius: 50% 50% 50% 50%;
     padding: 8px;
     font-size: smaller;
@@ -81,7 +81,7 @@
   }
   .lastblock span i {
     color: #0065FC;
-    border: 2px solid red;
+    border: 2px solid blue;
     border-radius: 50% 50% 50% 50%;
     padding: 8px;
     padding-left: 15px;
@@ -101,12 +101,12 @@
     display: flex;
   }
   form .form-div i {
-    background-color: red;
+    background-color: blue;
     border-radius: 20px 0px 0px 20px;
     padding: 15px;
   }
   form .form-div input {
-    border: 1px solid red;
+    border: 1px solid blue;
   }
   form .form-div label {
     border-radius: 0px 20px 20px 0px;
@@ -178,7 +178,7 @@
   .thirdblock i {
     color: #0065FC;
     background-color: #DEEBFF;
-    border: 2px solid red;
+    border: 2px solid blue;
     border-radius: 50% 50% 50% 50%;
     padding: 8px;
     font-size: smaller;
@@ -200,7 +200,7 @@
   }
   .lastblock span i {
     color: #0065FC;
-    border: 2px solid red;
+    border: 2px solid blue;
     border-radius: 50% 50% 50% 50%;
     padding: 8px;
     padding-left: 15px;
@@ -220,12 +220,12 @@
     display: flex;
   }
   form .form-div i {
-    background-color: red;
+    background-color: blue;
     border-radius: 20px 0px 0px 20px;
     padding: 15px;
   }
   form .form-div input {
-    border: 1px solid red;
+    border: 1px solid blue;
   }
   form .form-div label {
     border-radius: 0px 20px 20px 0px;
@@ -264,7 +264,7 @@
     border-top: 2px solid #0065FC;
   }
   .firstblock-ul--li2 {
-    border-top: 2px solid red;
+    border-top: 2px solid blue;
   }
   .firstblock li {
     padding: 30px;
@@ -301,7 +301,7 @@
   .thirdblock i {
     color: #0065FC;
     background-color: #DEEBFF;
-    border: 2px solid red;
+    border: 2px solid blue;
     border-radius: 50% 50% 50% 50%;
     padding: 8px;
     font-size: smaller;
@@ -330,7 +330,7 @@
   }
   .lastblock div i {
     color: #0065FC;
-    border: 2px solid red;
+    border: 2px solid blue;
     border-radius: 50% 50% 50% 50%;
     padding: 8px;
     padding-left: 15px;
@@ -350,12 +350,12 @@
     display: flex;
   }
   form .form-div i {
-    background-color: red;
+    background-color: blue;
     border-radius: 20px 0px 0px 20px;
     padding: 15px;
   }
   form .form-div input {
-    border: 1px solid red;
+    border: 1px solid blue;
   }
   form .form-div label {
     border-radius: 0px 20px 20px 0px;
@@ -400,7 +400,7 @@
     flex-direction: column;
     height: 650px;
     width: 380px;
-    background-color: red;
+    background-color: blue;
     border-radius: 20px;
     margin-left: 40px;
   }
@@ -548,7 +548,7 @@
   main .hebergements {
     height: 650px;
     width: 900px;
-    background-color: red;
+    background-color: blue;
     border-radius: 20px;
   }
   main .hebergements #Hebergements {
@@ -690,7 +690,7 @@
     flex-direction: column;
     height: 100%;
     width: 110%;
-    background-color: red;
+    background-color: blue;
     border-radius: 20px;
     margin-left: 40px;
   }
@@ -835,7 +835,7 @@
   main .hebergements {
     height: 100%;
     width: 100%;
-    background-color: red;
+    background-color: blue;
     border-radius: 20px;
   }
   main .hebergements--bloc1 {
@@ -969,7 +969,7 @@
     flex-direction: column;
     height: auto;
     width: 350px;
-    background-color: red;
+    background-color: blue;
   }
   main .aside h1 i {
     float: right;
@@ -1240,7 +1240,7 @@
   footer {
     min-width: 100%;
     display: flex;
-    background-color: red;
+    background-color: blue;
     margin-top: 50px;
     height: 200px;
     font-size: 20px;
@@ -1296,7 +1296,7 @@
   footer {
     width: 100%;
     display: flex;
-    background-color: red;
+    background-color: blue;
     margin-top: 50px;
     height: 200px;
     font-size: 15px;
@@ -1354,7 +1354,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: blue;
     margin-top: 50px;
     font-size: 18px;
   }
