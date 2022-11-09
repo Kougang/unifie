@@ -1,0 +1,23 @@
+
+{
+  "name": "unifie",
+  "version": "1.0.0",
+  "description": "derniere modification du site et validation des pages y compris la liaison gitup",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kougang/unifie1.git"
+  },
+  "author": "SOPJIO",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/Kougang/unifie1/issues"
+  },
+  "homepage": "https://github.com/Kougang/unifie1#readme"
+}
+

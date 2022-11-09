@@ -1,0 +1,193 @@
+
+
+
+
+// -------------------------------
+// --CHARGEMENT DU STYLE DESKTOP--
+// -------------------------------
+
+
+
+
+
+@media screen and (min-width: 992px) {
+footer{
+    min-width:110%;
+    
+    display: flex;
+    background-color:$gris;
+    margin-top: 50px;
+    height: 200px;
+    @include font-size;
+
+    & div{
+        & a{
+            all: unset;
+            margin-top: 10px;
+        }
+    }
+
+    .firstfooter{
+        
+        @include footer-element(5%);
+        font-family: 'Raleway';
+
+     & :nth-child(1){
+    //    font-weight: bold;
+    @include typo-fontWeifgh;
+     }
+    }
+    .secondfooter{
+        @include footer-element(20%);
+        font-family: 'Raleway';
+
+    & :nth-child(1){
+        @include typo-fontWeifgh;
+    }
+}
+
+    .thirdfooter{
+        @include footer-element(20%);
+        font-family: 'Raleway';
+   
+
+    & :nth-child(1){
+        @include typo-fontWeifgh;
+    }
+}
+}
+}
+
+
+
+
+
+// // ---------------------------------------
+// // --CHARGEMENT DU STYLE TABLETTE--
+// // ---------------------------------------
+
+
+
+
+
+
+@media screen and (min-width: 778px) and (max-width: 991px){
+    
+footer{
+    // min-width: 778px;
+    // max-width: 991px;
+width: 110%;
+
+   
+
+    display: flex;
+    background-color:$gris;
+    margin-top: 50px;
+    height: 200px;
+    @include font-size_tab;
+
+    & div{
+        & a{
+            all: unset;
+            margin-top: 10px;
+        }
+    }
+
+    .firstfooter{
+        
+        @include footer-element_tab(5%);
+        font-family: 'Raleway';
+
+     & :nth-child(1){
+    
+        @include typo-fontWeifgh_tab;
+     }
+    }
+    .secondfooter{
+        @include footer-element_tab(20%);
+        font-family: 'Raleway';
+
+    & :nth-child(1){
+        @include typo-fontWeifgh_tab;
+    }
+}
+
+    .thirdfooter{
+        @include footer-element_tab(20%);
+        font-family: 'Raleway';
+    & :nth-child(1){
+        @include typo-fontWeifgh_tab;
+    }
+}
+}
+
+}
+
+
+
+
+
+
+
+// // ------------------------------
+// // --CHARGEMENT DU STYLE mobile--
+// // ------------------------------
+
+
+
+
+
+
+
+@media screen and  (width < 778px) {
+    
+footer{
+    width: 350px;
+    height: auto;
+
+
+    display: flex;
+    flex-direction: column;
+    background-color:$gris;
+    margin-top: 50px;
+    
+    @include font-size_mob;
+
+    & div{
+        & a{
+            all: unset;
+            margin-top: 10px;
+        }
+    }
+
+    .firstfooter{
+        
+        @include footer-element_mob(5%);
+        font-family: 'Raleway';
+
+     & :nth-child(1){
+    
+        @include typo-fontWeifgh_mob;
+     }
+    }
+    .secondfooter{
+        
+        @include footer-element_mob(5%);
+        font-family: 'Raleway';
+
+    & :nth-child(1){
+        @include typo-fontWeifgh_mob;
+    }
+}
+
+    .thirdfooter{
+        
+        @include  footer-element_mob(5%);
+        font-family: 'Raleway';
+    & :nth-child(1){
+        @include typo-fontWeifgh_mob;
+    }
+}
+}
+    
+}

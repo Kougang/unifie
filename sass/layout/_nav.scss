@@ -1,0 +1,9 @@
+// version tablette
+nav{
+    & ul{
+        display: flex;
+        li{
+            border-right:40px ;
+        }
+    }
+}

@@ -1,0 +1,529 @@
+
+
+// --CHARGEMENT DU STYLE DESKTOP--
+
+@media screen and (min-width: 992px) {
+   
+
+.firstblock{ 
+    min-width:1300px;
+   
+
+   
+
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include font-size;
+
+    & img{
+        @include dimensions-image(40px , 80px);
+        padding:30px  ;
+        border-radius: unset;
+    }
+
+   
+
+  &-ul{
+    display: flex;
+
+    &--li{
+        list-style-type: none;
+        & a{
+            all:unset;
+        }
+
+    }
+    &--li1{
+        border-top: 2px solid $blue;
+    }
+ }
+     li{
+        padding:30px  ;
+     }
+    //  ul :nth-child(1){
+    //     border-top: 2px solid $blue;
+    //  }
+     li:hover{
+        color: $blue;
+        border-top: 2px solid $blue;
+     }
+} 
+
+.secondblock{
+    // border: 1px solid red;
+    
+    margin-bottom: 20px;
+    @include font-size;
+    &-s1{
+        @include typo-fontWeifgh;
+        font-family:'Raleway';
+     
+    }
+
+    &-s2{
+        margin-top: 1px;
+        font-family: 'Raleway';
+       
+       }
+}
+
+
+.thirdblock{
+    // border: 1px solid green;
+    display: flex;
+    @include font-size;
+    font-family:'Raleway';
+
+    & span{
+        // marg exterieur
+        margin: 10px ;
+        //marge interieur
+        padding-right: 15px;
+        @include typo-fontWeifgh;
+       
+    }
+    i{ 
+        color: $blue;
+        background-color: $bleue-claire;
+        border: 2px solid $gris;
+        border-radius: 50% 50% 50%  50%;
+        padding: 8px;
+        font-size: smaller
+    }
+    &--span{
+        border: 1px solid $blue;
+        border-radius: 30px 30px 30px 30px;
+        padding: 5px;
+    }
+
+    &--span:hover{
+        color: white;
+        background-color: $blue;
+    }
+
+    
+}
+
+.lastblock{
+    @include font-size;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Raleway';
+
+    & span{
+        & i{
+            color: $blue;
+            
+            border: 2px solid $gris;
+            border-radius: 50% 50% 50%  50%;
+            
+            padding: 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            margin-right: 20px;
+            font-size: smaller;
+        }
+    }
+}
+
+form{
+    @include font-size;
+     div{
+        width: 200px;
+       height: 50px;
+        
+        margin-bottom: 20px;
+     }
+     .form-div{
+        display:flex;
+        & i{
+            
+            background-color:$gris;
+            border-radius: 20px 0px 0px 20px;
+           padding: 15px;
+        }
+        & input{
+            border: 1px solid $gris;
+            
+        //  width: 200px;
+        // //  height: 40px;
+        }
+        & label{
+            // background-color: grey;
+            border-radius: 0px 20px 20px 0px;
+            font-size: large;
+            padding: 12px;
+            @include typo-fontWeifgh;
+            
+                background-color: $blue;
+                color: white;
+        }
+     }
+
+}
+}
+
+
+
+
+
+// // ---------------------------------------
+// // --CHARGEMENT DU STYLE TABLETTE--
+// // ---------------------------------------
+
+
+
+
+
+@media screen and (min-width: 778px) and (max-width: 991px){
+    
+.firstblock{ 
+    
+
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include font-size_tab;
+
+    & img{
+        @include dimensions-image_tab(40px , 80px);
+        padding:30px  ;
+        border-radius: unset;
+    }
+
+   
+
+  &-ul{
+    display: flex;
+
+    &--li{
+        list-style-type: none;
+        & a{
+            all:unset;
+        }
+
+    }
+    &--li1{
+        border-top: 2px solid $blue;
+    }
+ }
+     li{
+        padding:30px  ;
+     }
+   
+     li:hover{
+        color: $blue;
+        border-top: 2px solid $blue;
+     }
+} 
+
+.secondblock{
+    // border: 1px solid red;
+    
+    margin-bottom: 20px;
+    @include font-size_tab;
+    &-s1{
+        @include typo-fontWeifgh_tab;
+        font-family:'Raleway';
+     
+    }
+
+    &-s2{
+        margin-top: 1px;
+        font-family: 'Raleway';
+       
+       }
+}
+
+
+.thirdblock{
+    // border: 1px solid green;
+    display: flex;
+    @include font-size_tab;
+    font-family:'Raleway';
+
+    & span{
+        // marg exterieur
+        margin: 10px ;
+        //marge interieur
+        padding-right: 15px;
+        @include typo-fontWeifgh_tab;
+       
+    }
+    i{ 
+        color: $blue;
+        background-color: $bleue-claire;
+        border: 2px solid $gris;
+        border-radius: 50% 50% 50%  50%;
+        padding: 8px;
+        font-size: smaller
+    }
+    &--span{
+        border: 1px solid $blue;
+        border-radius: 30px 30px 30px 30px;
+        padding: 5px;
+    }
+
+    &--span:hover{
+        color: white;
+        background-color: $blue;
+    }
+
+  
+}
+
+.lastblock{
+    @include font-size_tab;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Raleway';
+
+    // &--span{
+    //     color: red;
+    // }
+
+    & span{
+        & i{
+            color: $blue;
+            
+            border: 2px solid $gris;
+            border-radius: 50% 50% 50%  50%;
+            
+            padding: 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            margin-right: 20px;
+            font-size: smaller
+        }
+    }
+    
+}
+form{
+    @include font-size_tab;
+     div{
+        width: 200px;
+       height: 50px;
+        
+        margin-bottom: 20px;
+     }
+     .form-div{
+        display:flex;
+        & i{
+            
+            background-color:$gris;
+            border-radius: 20px 0px 0px 20px;
+           padding: 15px;
+        }
+        & input{
+            border: 1px solid $gris;
+            
+        //  width: 200px;
+        // //  height: 40px;
+        }
+        & label{
+            // background-color: grey;
+            border-radius: 0px 20px 20px 0px;
+            font-size: large;
+            padding: 12px;
+            @include typo-fontWeifgh_tab;
+            
+                background-color: $blue;
+                color: white;
+        }
+     }
+
+}
+
+}
+
+
+
+
+
+// // ------------------------------
+// // --CHARGEMENT DU STYLE mobile--
+// // ------------------------------
+
+
+
+
+
+@media screen and  (width < 778px) {
+    
+.firstblock{ 
+   
+
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+   
+   @include font-size_mob;
+
+    & img{
+        @include dimensions-image_mob(40px , 80px);
+        padding:30px  ;
+        padding-left:150px;
+      
+        border-radius: unset;
+    }
+
+   
+
+  &-ul{
+    display: flex;
+
+    &--li{
+        list-style-type: none;
+        & a{
+            all:unset;
+        }
+
+    }
+    &--li1{
+        border-top: 2px solid $blue;
+    }
+    &--li2{
+        border-top: 2px solid $gris;
+    }
+ }
+     li{
+        padding:30px  ;
+     }
+    //  ul :nth-child(1){
+    //     border-top: 2px solid $blue;
+    //  }
+     li:hover{
+        color: $blue;
+        border-top: 2px solid $blue;
+     }
+} 
+
+.secondblock{
+    // border: 1px solid red;
+    
+    margin-bottom: 20px;
+    @include font-size_mob;
+    &-s1{
+        @include typo-fontWeifgh_mob;
+        font-family:'Raleway';
+     
+    }
+
+    &-s2{
+        margin-top: 1px;
+        font-family: 'Raleway';
+        font-size: 15px;
+       
+       }
+}
+
+
+.thirdblock{
+    // border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    @include font-size_mob;
+    font-family:'Raleway';
+
+    & span{
+        // marg exterieur
+        margin: 10px ;
+        
+        @include typo-fontWeifgh_mob;
+        
+       
+    }
+    i{ 
+        color: $blue;
+        background-color: $bleue-claire;
+        border: 2px solid $gris;
+        border-radius: 50% 50% 50%  50%;
+        padding: 8px;
+        font-size: smaller
+    }
+    &--span{
+        border: 1px solid $blue;
+        border-radius: 30px 30px 30px 30px;
+        padding: 5px;
+        width: 220px ; 
+    }
+    & div{
+        padding: 8px;
+    }
+
+    &--span:hover{
+        color: white;
+        background-color: $blue;
+    }
+
+}
+
+.lastblock{
+    @include font-size_mob;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Raleway';
+
+    
+
+    & div{
+        font-size: 15px;
+        & i{
+            color: $blue;
+            
+            border: 2px solid $gris;
+            border-radius: 50% 50% 50%  50%;
+            
+            padding: 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            margin-right: 20px;
+            font-size: smaller
+        }
+    }
+    
+}
+form{
+    @include font-size_mob;
+     div{
+        width: 200px;
+       height: 50px;
+        
+        margin-bottom: 20px;
+     }
+     .form-div{
+        display:flex;
+        & i{
+            
+            background-color:$gris;
+            border-radius: 20px 0px 0px 20px;
+           padding: 15px;
+        }
+        & input{
+            border: 1px solid $gris;
+            
+        
+        }
+        & label{
+            // background-color: grey;
+            border-radius: 0px 20px 20px 0px;
+            font-size: large;
+            padding: 12px;
+            @include typo-fontWeifgh_mob;
+            
+                background-color: $blue;
+                color: white;
+        }
+     }
+
+}
+
+
+    
+}

@@ -1,0 +1,299 @@
+// --ETANT DONNÉE QUE ENCAPSULER LES MIXINS PAR LE MEDIA QUERY LA REND INNACCESSIBLE, CHAQUE VERSION (MOBILE.TABLETTE,DESKTOP) AURA CES MIXINS A PART --
+
+// -----------------
+// --MIXIN DESKTOP--
+// -----------------
+
+@mixin footer-element($margin) {
+
+    display: flex;
+    flex-direction: $footer-orientation;
+   margin-left: $margin;
+   margin-top: 20px;
+
+   span{
+    margin-top: 20px;
+   }
+}
+//mixin definissant la taille des images du bloc section et hebergement
+
+@mixin dimensions-image($height:180px , $width:300px) {
+   width:  $width;
+   height: $height;
+//    border: 30px;
+   border-radius : 20px 20px 1px 1px;
+}
+
+
+//mixin definissant la coloration des etoiles presents
+@mixin etoiles($color-blue:rgb(15, 68, 244), $color-gray:gray){
+    &_star{
+        color:$color-blue;
+        font-size:$taille_etoiles;
+        & em{
+            all: unset;
+            color: $color-gray;
+        }
+    }
+}
+
+@mixin taille-couleur-bloc-aside-hebergement($heignt:100px,$width:100px){
+    height: $heignt;
+       width: $width;
+       background-color: $gris;
+       border-radius: 20px;
+
+}
+
+// ceci a ete en realité defini en tant que typography, nais a cause des contrainte du media query qui ne pouvais etendre cette typographi (placeholder)
+// nous avions ete contraint de de tous les transformer en mixin
+
+@mixin typo-fontWeifgh{
+    font-weight: bold;
+    font-family:'Raleway';
+    
+}
+
+//ceci definit la marge dans le dernier bloc des images figcaption
+
+@mixin margin-figcaption-last {
+    margin: 15px;
+    
+}
+@mixin padding-left{
+    margin-left: 20px;
+}
+
+
+@mixin white-radius-background-aside-hebergement{
+    padding: 5px;
+    margin: 20px;
+    border-radius: 20px ;
+    background-color: white;
+   
+}
+@mixin last-section-radius-shadow{
+    // border :2px solid red;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+// celui est celui de l'entete et le footer
+@mixin font-size{
+    font-size: 20px;
+}
+// celui ci est celui des images
+@mixin font-size2{
+    font-size: 15px;
+}
+
+
+
+
+// ------------------------
+// --MIXIN DE LA TABLETTE--
+// ------------------------
+
+
+
+
+
+@mixin footer-element_tab($margin) {
+
+    display: flex;
+    flex-direction: $footer-orientation;
+   margin-left: $margin;
+   margin-top: 20px;
+
+   span{
+    margin-top: 20px;
+   }
+}
+//mixin definissant la taille des images du bloc section et hebergement
+
+@mixin dimensions-image_tab($height:180px , $width:300px) {
+   width:  $width;
+   height: $height;
+//    border: 30px;
+   border-radius : 20px 20px 1px 1px;
+}
+
+//mixin definissant la coloration des etoiles presents
+@mixin etoiles_tab($color-blue:rgb(15, 68, 244), $color-gray:gray){
+    &_star{
+        color:$color-blue;
+        font-size:$taille_etoiles;
+        & em{
+            all: unset;
+            color: $color-gray;
+        }
+    }
+}
+
+@mixin taille-couleur-bloc-aside-hebergement_tab($height:50%, $width:50%){
+    height: $height;
+       width: $width;
+       background-color: $gris;
+       border-radius: 20px;
+
+}
+//TYPO MIGRÉ
+
+@mixin typo-fontWeifgh_tab{
+    font-weight: bold;
+    font-family:'Raleway';
+    
+}
+@mixin padding-left_tab{
+    margin-left: 20px;
+}
+
+//ceci definit la marge dans le dernier bloc des images figcaption
+
+@mixin margin-figcaption-last_tab {
+    margin: 5px;
+    
+}
+
+
+@mixin white-radius-background-aside-hebergement_tab{
+    padding: 5px;
+    margin: 20px;
+    border-radius: 20px ;
+    background-color: white;
+   
+}
+@mixin last-section-radius-shadow_tab{
+    // border :2px solid red;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+@mixin font-size_tab{
+    font-size: 15px;
+}
+// celui ci est celui des images
+@mixin font-size2_tab{
+    font-size: 12px;
+}
+
+
+
+
+
+// ----------------------
+// --MIXIN DE LA MOBILE--
+// ----------------------
+
+
+
+
+
+@mixin footer-element_mob($margin) {
+
+    display: flex;
+    flex-direction: $footer-orientation;
+   margin-left: $margin;
+   margin-top: 20px;
+
+   span{
+    margin-top: 20px;
+   }
+}
+//mixin definissant la taille des images du bloc section et hebergement
+
+@mixin dimensions-image_mob($height:180px , $width:300px) {
+   width:  $width;
+   height: $height;
+//    border: 30px;
+   border-radius : 20px 20px 1px 1px;
+}
+
+//mixin definissant la coloration des etoiles presents
+@mixin etoiles_mob($color-blue:rgb(15, 68, 244), $color-gray:gray){
+    &_star{
+        // padding-top: 50px;
+        color:$color-blue;
+        font-size:$taille_etoiles_mob;
+        & em{
+            all: unset;
+            color: $color-gray;
+        }
+    }
+}
+
+
+
+@mixin taille-couleur-bloc-aside-hebergement_mob($height:50%, $width:50%){
+    height: $height;
+       width: $width;
+       background-color: $gris;
+    //    border-radius: 20px;
+
+}
+@mixin  white-radius-background-hebergement-last_mob($heigth:auto , $width:300px) {
+    padding: 5px;
+    margin: 20px;
+    border-radius: 20px ;
+    box-shadow: 0px 0px 5px 0px black;
+    background-color: white;
+    width: $width;
+    height: $heigth;
+}
+
+@mixin  white-radius-background-hebergement-activite_mob($heigth:auto , $width:300px) {
+    // padding: 5px;
+    // margin: 20px;
+    border-radius: 20px ;
+    box-shadow: 0px 0px 5px 0px black;
+    background-color: white;
+    width: $width;
+    height: $heigth;
+}
+
+// TYPO MIGRÉ
+
+@mixin typo-fontWeifgh_mob{
+    font-weight: bold;
+    font-family:'Raleway';
+    
+}
+@mixin padding-left_mob{
+    margin-left: 20px;
+}
+//ceci definit la marge dans le dernier bloc des images figcaption
+
+@mixin margin-figcaption-last_mob {
+    margin: 15px;
+    
+}
+
+
+@mixin white-radius-background-aside_mob{
+    padding: 5px;
+    margin: 20px;
+    border-radius: 20px ;
+    background-color: white;
+   
+}
+// @mixin white-radius-background-hebergement-last_mob{
+//     padding: 5px;
+//     margin: 20px;
+//     border-radius: 20px ;
+//     box-shadow: 0px 0px 5px 0px black;
+//     background-color: white;
+//     width: 300px;
+//     height: auto;
+  
+
+   
+// }
+@mixin last-section-radius-shadow_mob{
+    // border :2px solid red;
+    border-radius: 20px;
+    // box-shadow: 0px 0px 5px 0px black;
+}
+@mixin font-size_mob{
+    font-size: 18px;
+}
+@mixin font-size2_mob{
+    font-size: 15px;
+}
