@@ -1238,7 +1238,7 @@
 }
 @media screen and (min-width: 992px) {
   footer {
-    min-width: 110%;
+    min-width: 100%;
     display: flex;
     background-color: #F2F2F2;
     margin-top: 50px;
@@ -1294,7 +1294,7 @@
 }
 @media screen and (min-width: 778px) and (max-width: 991px) {
   footer {
-    width: 110%;
+    width: 100%;
     display: flex;
     background-color: #F2F2F2;
     margin-top: 50px;

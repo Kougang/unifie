@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kougang/unifie1.git"
+    "url": "https://github.com/Kougang/unifie.git"
   },
   "author": "SOPJIO",
   "license": "ISC",
   "browserslist": "last 4 versions",
   "bugs": {
-    "url": "https://github.com/Kougang/unifie1/issues"
+    "url": "https://github.com/Kougang/unifie/issues"
   },
-  "homepage": "https://github.com/Kougang/unifie1#readme"
+  "homepage": "https://github.com/Kougang/unifie#readme"
 }
 
