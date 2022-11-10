@@ -682,7 +682,7 @@ figcaption{
             all:unset;
                 display: flex;
                 flex-direction: column;
-                border: 1px solid red;
+                // border: 1px solid red;
                 @include taille-couleur-bloc-aside-hebergement_mob(auto,100%);
               
                 & h1{
@@ -694,7 +694,7 @@ figcaption{
     
             &-img{
                
-                @include dimensions-image_mob(200px,200px);
+                @include dimensions-image_mob(300px,400px);
 
                 //forsage , en effet le border-raduis preccedent s'applique 
                 //mais la ligne suivante nous permet de forcer et d'avoir une autre forme de bordure
@@ -770,11 +770,11 @@ figcaption{
     
         .figure_hebergements_bloc2{
             &_caption21{
-                font-size:$taille_etoiles;
+                // font-size:$taille_etoiles;
                 @include typo-fontWeifgh_mob;
-               
                 @include etoiles_mob;
-                
+                // color: red;
+                @include font-size2_mob;
             }
             &_caption22{
                 @include typo-fontWeifgh_mob;
@@ -783,8 +783,8 @@ figcaption{
             &_caption23{
                 @include typo-fontWeifgh_mob;
                 &_star{
-                    color: blue;
-                    font-size:$taille_etoiles;
+                    color:$blue;
+                    font-size:$taille_etoiles_mob;
                 }
             }
         }

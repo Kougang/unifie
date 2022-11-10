@@ -225,7 +225,7 @@
 @mixin taille-couleur-bloc-aside-hebergement_mob($height:50%, $width:50%){
     height: $height;
        width: $width;
-       background-color: blue;
+       background-color:$gris;
     //    border-radius: 20px;
 
 }
@@ -292,8 +292,8 @@
     // box-shadow: 0px 0px 5px 0px black;
 }
 @mixin font-size_mob{
-    font-size: 18px;
+    font-size: 35px;
 }
 @mixin font-size2_mob{
-    font-size: 15px;
+    font-size: 40px;
 }
