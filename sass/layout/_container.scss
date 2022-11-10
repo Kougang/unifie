@@ -15,6 +15,7 @@
 .br{
     display: none;
 }
+
 @media all and (min-width: 992px)  {
     
 
@@ -642,6 +643,7 @@ figcaption{
     .br{
         display: flex;
     }
+   
 
     figcaption{
         @include font-size2_mob;
@@ -672,17 +674,17 @@ figcaption{
             & figcaption a {
                 all:unset;
             }
-    }
+       }
     
         
     
         .aside{
+            all:unset;
                 display: flex;
                 flex-direction: column;
-                // border: 1px solid red;
-                @include taille-couleur-bloc-aside-hebergement_mob(auto,350px);
-                // margin-left: 40px;
-    
+                border: 1px solid red;
+                @include taille-couleur-bloc-aside-hebergement_mob(auto,100%);
+              
                 & h1{
                     & i{
                         float: right;
@@ -692,7 +694,8 @@ figcaption{
     
             &-img{
                
-                @include dimensions-image_mob(130px,130px);
+                @include dimensions-image_mob(200px,200px);
+
                 //forsage , en effet le border-raduis preccedent s'applique 
                 //mais la ligne suivante nous permet de forcer et d'avoir une autre forme de bordure
                 border-radius : 20px 1px 1px 20px;
@@ -707,10 +710,7 @@ figcaption{
                     @include typo-fontWeifgh_mob;
                 }
             }
-            // &-caption11_star{
-            //     padding-top: 80px;
-            //     color: red;
-            // }
+            
             &-caption12{
                 @include etoiles_mob;
                 &-img1{
@@ -734,23 +734,23 @@ figcaption{
                
             }
            
-    }
+        }
     
     
     .img-heberegements
         {
             // @include  dimensions-image-pourcent(50%,80%)
             @include last-section-radius-shadow_mob;
-            @include dimensions-image_mob(100px,300px);
+            @include dimensions-image_mob(300px,100%);
            
         }
       .hebergement--figure{
         display: flex;
         flex-direction: column;
-        //  @extend .white-radius-background-hebergement-last;
-        @include  white-radius-background-hebergement-last_mob(auto , 300px);
+       
+        @include  white-radius-background-hebergement-last_mob(auto , 95%);
         
-        // border: 1px solid black;
+        border: 1px solid black;
       }
         
         .figure_hebergements_bloc1{
@@ -791,9 +791,9 @@ figcaption{
     
         .hebergements{
       
-                    //  @include taille-couleur-bloc-aside-hebergement(auto,350px);
+                     @include taille-couleur-bloc-aside-hebergement_mob(auto,100%);
                     
-                // border:  2px solid greenyellow;
+                border:  2px solid greenyellow;
                    
                     &--bloc1{
                         display: flex;
@@ -825,9 +825,11 @@ figcaption{
     
      //images du bloc activité
     //image active concerne les proprietes qui doivent s qpliquer a tous les images du bloc activité
+
+
      .img-activite{
         //taille de límage
-        @include dimensions-image_mob(100px,300px);
+        @include dimensions-image_mob(300px,100%);
     }
     
     //dernier bloc d'images
@@ -872,15 +874,15 @@ figcaption{
     
     }
     
-    //    #last-section--row1{
-    //     //taille de límage
-    //     @include dimensions-image(220px,200px);
-    //    }
+       #last-section--row1{
+        //taille de límage
+        @include dimensions-image_mob(300px,100%);
+       }
     
-    //    #last-section--row2{
-    //     //taille de límage
-    //     @include dimensions-image(220px,200px);
-    // }
+       #last-section--row2{
+        //taille de límage
+        @include dimensions-image_mob(300px,100%);
+    }
     
     //actions dans la balise figure
     
@@ -888,7 +890,7 @@ figcaption{
         // display: flex;
         // flex-direction: column;
         // @extend .last-section-radius-shadow;
-        @include  white-radius-background-hebergement-activite_mob(auto , 300px);
+        @include  white-radius-background-hebergement-activite_mob(auto , 95%);
       
     
         &_caption{
@@ -901,7 +903,7 @@ figcaption{
             //     flex-direction: column;
             // @extend .last-section-radius-shadow;
             // @extend .white-radius-background-hebergement-last;
-            @include  white-radius-background-hebergement-activite_mob(auto , 300px);
+            @include  white-radius-background-hebergement-activite_mob(auto , 95%);
     
             &_caption{
                 @include typo-fontWeifgh_mob;
@@ -913,7 +915,7 @@ figcaption{
         //         flex-direction: column;
         // @extend .last-section-radius-shadow;
         // @extend .white-radius-background-hebergement-last;
-        @include  white-radius-background-hebergement-activite_mob(auto , 300px);
+        @include  white-radius-background-hebergement-activite_mob(auto , 95%);
         
         &_caption{
             @include typo-fontWeifgh_mob;
@@ -925,7 +927,7 @@ figcaption{
             //     flex-direction: column;
             // @extend .last-section-radius-shadow;
             // @extend .white-radius-background-hebergement-last;
-            @include  white-radius-background-hebergement-activite_mob(auto , 300px);
+            @include  white-radius-background-hebergement-activite_mob(auto , 95%);
            
             &_caption{
                 @include typo-fontWeifgh_mob;
@@ -937,7 +939,7 @@ figcaption{
                 // flex-direction: column;
                 // @extend .last-section-radius-shadow;
                 // @extend .white-radius-background-hebergement-last;
-                @include  white-radius-background-hebergement-activite_mob(auto , 300px);
+                @include  white-radius-background-hebergement-activite_mob(auto , 95%);
                
                 &_caption{
                     @include typo-fontWeifgh_mob;
@@ -948,7 +950,7 @@ figcaption{
                   
                     // @extend .last-section-radius-shadow;
                     // @extend .white-radius-background-hebergement-last;
-                    @include  white-radius-background-hebergement-activite_mob(auto , 300px);
+                    @include  white-radius-background-hebergement-activite_mob(auto , 95%);
                    
                     &_caption{
                         @include typo-fontWeifgh_mob;

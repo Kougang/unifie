@@ -1,3 +1,7 @@
+#seachsuite {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   .firstblock {
     min-width: 1300px;
@@ -238,6 +242,12 @@
   }
 }
 @media screen and (max-device-width: 777px) {
+  #seachsuite {
+    display: inline;
+  }
+  label {
+    display: none;
+  }
   .firstblock {
     display: flex;
     flex-direction: column;
@@ -310,7 +320,7 @@
     border: 1px solid #0065FC;
     border-radius: 30px 30px 30px 30px;
     padding: 5px;
-    width: 220px;
+    width: 40%;
   }
   .thirdblock div {
     padding: 8px;
@@ -343,28 +353,25 @@
   }
   form div {
     width: 200px;
-    height: 50px;
+    height: 40px;
     margin-bottom: 20px;
   }
   form .form-div {
     display: flex;
-  }
-  form .form-div i {
-    background-color: #F2F2F2;
-    border-radius: 20px 0px 0px 20px;
-    padding: 15px;
+    width: 30%;
   }
   form .form-div input {
     border: 1px solid #F2F2F2;
   }
-  form .form-div label {
-    border-radius: 0px 20px 20px 0px;
+  form .form-div #seachsuite {
+    width: 130%;
+    background-color: #0065FC;
+    border-radius: 10px 10px 10px 10px;
+  }
+  form .form-div #seachsuite i {
+    all: unset;
     font-size: large;
     padding: 12px;
-    font-weight: bold;
-    font-family: "Raleway";
-    background-color: #0065FC;
-    color: white;
   }
 }
 @font-face {
@@ -964,25 +971,27 @@
     all: unset;
   }
   main .aside {
+    all: unset;
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
     height: auto;
-    width: 350px;
-    background-color: #F2F2F2;
+    width: 100%;
+    background-color: blue;
   }
   main .aside h1 i {
     float: right;
     margin-right: 30px;
   }
   main .aside-img {
-    width: 130px;
-    height: 130px;
+    width: 200px;
+    height: 200px;
     border-radius: 20px 20px 1px 1px;
     border-radius: 20px 1px 1px 20px;
   }
   main .aside-caption11_star {
     color: rgb(15, 68, 244);
-    font-size: 15px;
+    font-size: 18px;
   }
   main .aside-caption11_star em {
     all: unset;
@@ -994,7 +1003,7 @@
   }
   main .aside-caption12_star {
     color: rgb(15, 68, 244);
-    font-size: 15px;
+    font-size: 18px;
   }
   main .aside-caption12_star em {
     all: unset;
@@ -1006,7 +1015,7 @@
   }
   main .aside-caption13_star {
     color: rgb(15, 68, 244);
-    font-size: 15px;
+    font-size: 18px;
   }
   main .aside-caption13_star em {
     all: unset;
@@ -1028,8 +1037,8 @@
   }
   main .img-heberegements {
     border-radius: 20px;
-    width: 300px;
-    height: 100px;
+    width: 100%;
+    height: 300px;
     border-radius: 20px 20px 1px 1px;
   }
   main .hebergement--figure {
@@ -1040,8 +1049,9 @@
     border-radius: 20px;
     box-shadow: 0px 0px 5px 0px black;
     background-color: white;
-    width: 300px;
+    width: 95%;
     height: auto;
+    border: 1px solid black;
   }
   main .figure_hebergements_bloc1_caption11 {
     font-weight: bold;
@@ -1049,7 +1059,7 @@
   }
   main .figure_hebergements_bloc1_caption11_star {
     color: rgb(15, 68, 244);
-    font-size: 15px;
+    font-size: 18px;
   }
   main .figure_hebergements_bloc1_caption11_star em {
     all: unset;
@@ -1061,7 +1071,7 @@
   }
   main .figure_hebergements_bloc1_caption12_star {
     color: rgb(15, 68, 244);
-    font-size: 15px;
+    font-size: 18px;
   }
   main .figure_hebergements_bloc1_caption12_star em {
     all: unset;
@@ -1073,7 +1083,7 @@
   }
   main .figure_hebergements_bloc1_caption13_star {
     color: rgb(15, 68, 244);
-    font-size: 15px;
+    font-size: 18px;
   }
   main .figure_hebergements_bloc1_caption13_star em {
     all: unset;
@@ -1086,7 +1096,7 @@
   }
   main .figure_hebergements_bloc2_caption21_star {
     color: rgb(15, 68, 244);
-    font-size: 15px;
+    font-size: 18px;
   }
   main .figure_hebergements_bloc2_caption21_star em {
     all: unset;
@@ -1098,7 +1108,7 @@
   }
   main .figure_hebergements_bloc2_caption22_star {
     color: rgb(15, 68, 244);
-    font-size: 15px;
+    font-size: 18px;
   }
   main .figure_hebergements_bloc2_caption22_star em {
     all: unset;
@@ -1111,6 +1121,12 @@
   main .figure_hebergements_bloc2_caption23_star {
     color: blue;
     font-size: large;
+  }
+  main .hebergements {
+    height: auto;
+    width: 100%;
+    background-color: blue;
+    border: 2px solid greenyellow;
   }
   main .hebergements--bloc1 {
     display: flex;
@@ -1133,8 +1149,8 @@
     flex-direction: column-reverse;
   }
   main .img-activite {
-    width: 300px;
-    height: 100px;
+    width: 100%;
+    height: 300px;
     border-radius: 20px 20px 1px 1px;
   }
   main .last-section {
@@ -1162,11 +1178,21 @@
     flex-direction: column;
     margin: 20px;
   }
+  main #last-section--row1 {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 20px 1px 1px;
+  }
+  main #last-section--row2 {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 20px 1px 1px;
+  }
   main .figure_last-section_row1 {
     border-radius: 20px;
     box-shadow: 0px 0px 5px 0px black;
     background-color: white;
-    width: 300px;
+    width: 95%;
     height: auto;
   }
   main .figure_last-section_row1_caption {
@@ -1178,7 +1204,7 @@
     border-radius: 20px;
     box-shadow: 0px 0px 5px 0px black;
     background-color: white;
-    width: 300px;
+    width: 95%;
     height: auto;
   }
   main .figure_last-section_row2_caption {
@@ -1190,7 +1216,7 @@
     border-radius: 20px;
     box-shadow: 0px 0px 5px 0px black;
     background-color: white;
-    width: 300px;
+    width: 95%;
     height: auto;
   }
   main .figure_last-section_column10_caption {
@@ -1202,7 +1228,7 @@
     border-radius: 20px;
     box-shadow: 0px 0px 5px 0px black;
     background-color: white;
-    width: 300px;
+    width: 95%;
     height: auto;
   }
   main .figure_last-section_column11_caption {
@@ -1214,7 +1240,7 @@
     border-radius: 20px;
     box-shadow: 0px 0px 5px 0px black;
     background-color: white;
-    width: 300px;
+    width: 95%;
     height: auto;
   }
   main .figure_last-section_column20_caption {
@@ -1226,7 +1252,7 @@
     border-radius: 20px;
     box-shadow: 0px 0px 5px 0px black;
     background-color: white;
-    width: 300px;
+    width: 95%;
     height: auto;
   }
   main .figure_last-section_column21_caption {
@@ -1349,7 +1375,7 @@
 }
 @media screen and (max-device-width: 777px) {
   footer {
-    width: 350px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;

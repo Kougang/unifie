@@ -1,6 +1,9 @@
 
 
 // --CHARGEMENT DU STYLE DESKTOP--
+#seachsuite{
+    display: none;
+}
 
 @media screen and (min-width: 992px) {
    
@@ -354,9 +357,17 @@ form{
 
 
 @media screen and  (max-device-width :777px) {
+
+    #seachsuite{
+        display: inline;
+    }
+    label{
+        display: none;
+    }
     
 .firstblock{ 
    
+ 
 
     // border: 1px solid black;
     display: flex;
@@ -450,7 +461,7 @@ form{
         border: 1px solid $blue;
         border-radius: 30px 30px 30px 30px;
         padding: 5px;
-        width: 220px ; 
+        width: 40% ; 
     }
     & div{
         padding: 8px;
@@ -493,32 +504,47 @@ form{
     @include font-size_mob;
      div{
         width: 200px;
-       height: 50px;
+       height: 40px;
         
         margin-bottom: 20px;
      }
      .form-div{
         display:flex;
-        & i{
+        width: 30%;
+        // .fa-location-dot{
             
-            background-color:$gris;
-            border-radius: 20px 0px 0px 20px;
-           padding: 15px;
-        }
+        //     background-color:$gris;
+        //     // border-radius: 20px 0px 0px 20px;
+        //    padding: 15px;
+        // }
         & input{
             border: 1px solid $gris;
             
         
         }
-        & label{
-            // background-color: grey;
-            border-radius: 0px 20px 20px 0px;
-            font-size: large;
-            padding: 12px;
-            @include typo-fontWeifgh_mob;
+        // & label{
+        //     // background-color: grey;
+        //     border-radius: 0px 20px 20px 0px;
+        //     font-size: large;
+        //     padding: 12px;
+        //     @include typo-fontWeifgh_mob;
             
-                background-color: $blue;
-                color: white;
+        //         background-color: $blue;
+        //         color: white;
+        // }
+        #seachsuite{
+            & i {
+                all: unset;
+              
+                font-size: large;
+                padding: 12px;
+                // @include typo-fontWeifgh_mob;
+                    // color: white;
+            }
+            width: 130%;
+            background-color: $blue;
+            border-radius: 10px 10px 10px 10px;
+            
         }
      }
 
