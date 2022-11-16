@@ -337,6 +337,9 @@ figcaption{
         min-width: auto;
        
     }
+    #populaire{
+        padding-left: 20px;
+    }
     figcaption{
         @include margin-figcaption-last_tab;
     }
@@ -640,6 +643,9 @@ figcaption{
    
     // =========================================================//
     // ==activation du selecteur desactivé au debut de ce cour==//
+    #populaire{
+        padding-left: 20px;
+    }
     .br{
         display: flex;
     }

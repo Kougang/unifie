@@ -366,20 +366,18 @@ form{
     }
     
 .firstblock{ 
-   
- 
-
-    // border: 1px solid black;
+    
     display: flex;
     flex-direction: column;
+    // --centrage du premier bloc--//
+
+    align-items: center; //centrage vertical
+    justify-content: center; //centrage horizontale
    
    @include font-size_mob;
 
     & img{
-        @include dimensions-image_mob(40px , 80px);
-        padding:30px  ;
-        padding-left:150px;
-      
+        @include dimensions-image_mob(40.5px , 80px);
         border-radius: unset;
     }
 
