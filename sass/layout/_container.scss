@@ -98,6 +98,10 @@ main{
         &-align{
             display: flex;
             @include white-radius-background-aside-hebergement;
+            //AGRANDISSEMENT FOND BLEU
+            &:hover{
+                @include agrandissement_generale;
+            }
         }
 
         &-caption{
@@ -113,10 +117,17 @@ main{
         @include dimensions-image(100px,230px);
        
     }
+   
+
   .hebergement--figure{
     display: flex;
     flex-direction: column;
     @include white-radius-background-aside-hebergement;
+
+    //AGRANDISSEMENT FOND BLEU
+        &:hover{
+            @include agrandissement_generale;
+        }
     
     // border: 1px solid black;
   }
@@ -240,6 +251,9 @@ figcaption{
 
     //taille de límage
     @include dimensions-image(445px,289px);
+
+     //AGRANDISSEMENT FOND BLEU
+   
     margin-top:5px;
     // margin-bottom:unset;
     // margin-bottom: 5px;
@@ -248,6 +262,7 @@ figcaption{
    #last-section--row2{
     //taille de límage
     @include dimensions-image(445px,289px);
+  
 }
 
 //actions dans la balise figure
@@ -256,6 +271,11 @@ figcaption{
     // display: flex;
     // flex-direction: column;
     @include last-section-radius-shadow;
+
+     //AGRANDISSEMENT FOND BLEU
+     &:hover{
+        @include agrandissement_generale;
+    }
   
 
     &_caption{
@@ -268,6 +288,11 @@ figcaption{
         //     flex-direction: column;
         @include last-section-radius-shadow;
 
+         //AGRANDISSEMENT FOND BLEU
+         &:hover{
+            @include agrandissement_generale;
+        }
+
         &_caption{
             @include typo-fontWeifgh;
             @include padding-left;
@@ -277,6 +302,10 @@ figcaption{
     // display: flex;
     //         flex-direction: column;
     @include last-section-radius-shadow;
+     //AGRANDISSEMENT FOND BLEU
+     &:hover{
+        @include agrandissement_generale;
+    }
     
     &_caption{
         @include typo-fontWeifgh;
@@ -287,6 +316,11 @@ figcaption{
         // display: flex;
         //     flex-direction: column;
         @include last-section-radius-shadow;
+
+         //AGRANDISSEMENT FOND BLEU
+         &:hover{
+            @include agrandissement_generale;
+        }
        
         &_caption{
             @include typo-fontWeifgh;
@@ -297,6 +331,11 @@ figcaption{
             // display: flex;
             // flex-direction: column;
             @include last-section-radius-shadow;
+
+             //AGRANDISSEMENT FOND BLEU
+             &:hover{
+                @include agrandissement_generale;
+            }
            
             &_caption{
                 @include typo-fontWeifgh;
@@ -306,6 +345,11 @@ figcaption{
             .figure_last-section_column21{
               
                 @include last-section-radius-shadow;
+
+                 //AGRANDISSEMENT FOND BLEU
+            &:hover{
+                @include agrandissement_generale;
+            }
                
                 &_caption{
                     @include typo-fontWeifgh;
@@ -409,6 +453,10 @@ figcaption{
             &-align{
                 display: flex;
                 @include white-radius-background-aside-hebergement_tab;
+                //agrandissement fond bleu
+                &:hover{
+                    @include agrandissement_generale;
+                }
           
             }
     
@@ -429,6 +477,11 @@ figcaption{
         display: flex;
         flex-direction: column;
         @include white-radius-background-aside-hebergement_tab;
+
+         //agrandissement fond bleu
+         &:hover{
+            @include agrandissement_generale;
+        }
         
         // border: 1px solid black;
       }
@@ -552,6 +605,11 @@ figcaption{
         // display: flex;
         // flex-direction: column;
         @include last-section-radius-shadow_tab;
+
+         //agrandissement fond bleu
+         &:hover{
+            @include agrandissement_generale;
+        }
       
     
         &_caption{
@@ -563,6 +621,11 @@ figcaption{
             // display: flex;
             //     flex-direction: column;
             @include last-section-radius-shadow_tab;
+
+             //agrandissement fond bleu
+             &:hover{
+                @include agrandissement_generale;
+            }
     
             &_caption{
                 @include typo-fontWeifgh_tab;
@@ -573,6 +636,11 @@ figcaption{
         // display: flex;
         //         flex-direction: column;
         @include last-section-radius-shadow_tab;
+
+         //agrandissement fond bleu
+         &:hover{
+            @include agrandissement_generale;
+        }
         
         &_caption{
             @include typo-fontWeifgh_tab;
@@ -583,6 +651,10 @@ figcaption{
             // display: flex;
             //     flex-direction: column;
             @include last-section-radius-shadow_tab;
+             //agrandissement fond bleu
+             &:hover{
+                @include agrandissement_generale;
+            }
            
             &_caption{
                 @include typo-fontWeifgh_tab;
@@ -593,6 +665,10 @@ figcaption{
                 // display: flex;
                 // flex-direction: column;
                 @include last-section-radius-shadow_tab;
+                 //agrandissement fond bleu
+                 &:hover{
+                    @include agrandissement_generale;
+                }
                
                 &_caption{
                     @include typo-fontWeifgh_tab;
@@ -602,6 +678,10 @@ figcaption{
                 .figure_last-section_column21{
                   
                     @include last-section-radius-shadow_tab;
+                     //agrandissement fond bleu
+                &:hover{
+                    @include agrandissement_generale;
+                }
                    
                     &_caption{
                         @include typo-fontWeifgh_tab;
@@ -730,8 +810,14 @@ figcaption{
                 }
             }
             &-align{
+                
                 display: flex;
+               
                 @include white-radius-background-aside_mob;
+                 //agrandissement fond bleu
+         &:hover{
+            @include agrandissement_generale;
+        }
           
             }
     
@@ -757,6 +843,10 @@ figcaption{
         @include  white-radius-background-hebergement-last_mob(auto , 95%);
         
         border: 1px solid black;
+         //agrandissement fond bleu
+         &:hover{
+            @include agrandissement_generale;
+        }
       }
         
         .figure_hebergements_bloc1{
@@ -897,6 +987,10 @@ figcaption{
         // flex-direction: column;
         // @extend .last-section-radius-shadow;
         @include  white-radius-background-hebergement-activite_mob(auto , 95%);
+         //agrandissement fond bleu
+         &:hover{
+            @include agrandissement_generale;
+        }
       
     
         &_caption{
@@ -910,6 +1004,10 @@ figcaption{
             // @extend .last-section-radius-shadow;
             // @extend .white-radius-background-hebergement-last;
             @include  white-radius-background-hebergement-activite_mob(auto , 95%);
+             //agrandissement fond bleu
+         &:hover{
+            @include agrandissement_generale;
+        }
     
             &_caption{
                 @include typo-fontWeifgh_mob;
@@ -922,6 +1020,10 @@ figcaption{
         // @extend .last-section-radius-shadow;
         // @extend .white-radius-background-hebergement-last;
         @include  white-radius-background-hebergement-activite_mob(auto , 95%);
+         //agrandissement fond bleu
+         &:hover{
+            @include agrandissement_generale;
+        }
         
         &_caption{
             @include typo-fontWeifgh_mob;
@@ -934,6 +1036,10 @@ figcaption{
             // @extend .last-section-radius-shadow;
             // @extend .white-radius-background-hebergement-last;
             @include  white-radius-background-hebergement-activite_mob(auto , 95%);
+             //agrandissement fond bleu
+         &:hover{
+            @include agrandissement_generale;
+        }
            
             &_caption{
                 @include typo-fontWeifgh_mob;
@@ -946,6 +1052,10 @@ figcaption{
                 // @extend .last-section-radius-shadow;
                 // @extend .white-radius-background-hebergement-last;
                 @include  white-radius-background-hebergement-activite_mob(auto , 95%);
+                 //agrandissement fond bleu
+                &:hover{
+                    @include agrandissement_generale;
+                }
                
                 &_caption{
                     @include typo-fontWeifgh_mob;
@@ -957,6 +1067,10 @@ figcaption{
                     // @extend .last-section-radius-shadow;
                     // @extend .white-radius-background-hebergement-last;
                     @include  white-radius-background-hebergement-activite_mob(auto , 95%);
+                     //agrandissement fond bleu
+                    &:hover{
+                        @include agrandissement_generale;
+                    }
                    
                     &_caption{
                         @include typo-fontWeifgh_mob;

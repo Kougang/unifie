@@ -1,5 +1,26 @@
 // --ETANT DONNÉE QUE ENCAPSULER LES MIXINS PAR LE MEDIA QUERY LA REND INNACCESSIBLE, CHAQUE VERSION (MOBILE.TABLETTE,DESKTOP) AURA CES MIXINS A PART --
 
+// CE MIXIN S'APPLIQUE A TOUTES LES
+@mixin agrandissement_generale {
+        &:hover{
+            background-color: $bleue-claire;
+            animation: agrand $anim_dur ease-out;
+        }
+ 
+
+    @keyframes agrand {
+        0%{
+            transform: scale(1);
+
+        }
+       100%{
+             transform: scale(1.1);
+       }
+    }
+}
+
+
+
 // -----------------
 // --MIXIN DESKTOP--
 // -----------------

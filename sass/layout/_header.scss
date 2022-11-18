@@ -1,6 +1,8 @@
 
 
 // --CHARGEMENT DU STYLE DESKTOP--
+
+
 #seachsuite{
     display: none;
 }
@@ -74,65 +76,101 @@
 
 
 .thirdblock{
+
+
     // border: 1px solid green;
-    display: flex;
+    display: inline-flex;
     @include font-size;
     font-family:'Raleway';
 
     & span{
+        
         // marg exterieur
-        margin: 10px ;
+        // margin: 10px ;
         //marge interieur
         padding-right: 15px;
         @include typo-fontWeifgh;
        
     }
     i{ 
+    //--cette zone permet essentiellement de centrer--//
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    //--cette zone permet essentiellement de centrer--//
+        height: 35px;
+        width: 35px;
         color: $blue;
         background-color: $bleue-claire;
         border: 2px solid $gris;
         border-radius: 50% 50% 50%  50%;
-        padding: 8px;
+
+        
+       
+        
         font-size: smaller
     }
-    &--span{
-        border: 1px solid $blue;
-        border-radius: 30px 30px 30px 30px;
-        padding: 5px;
+    &--div{
+        height: 39px;
+        width: auto;
+        border: 1px solid $gris;
+       
+        border-radius: 60px 60px 60px 60px;
+        
+        margin-left: 20px;
     }
 
-    &--span:hover{
+    &--div:hover{
         color: white;
-        background-color: $blue;
+        background-color: $gris;
+        color: $blue;
+        & i{
+            color: $gris;
+                background-color: $blue;
+          
+        }
+     
     }
 
     
 }
 
+
 .lastblock{
+
     @include font-size;
     margin-top: 20px;
     margin-bottom: 40px;
     font-family: 'Raleway';
 
-    & span{
+       & div{
+        font-size: 15px;
+       
         & i{
-            color: $blue;
             
-            border: 2px solid $gris;
-            border-radius: 50% 50% 50%  50%;
-            
-            padding: 8px;
-            padding-left: 15px;
-            padding-right: 15px;
+           
+            height: 35px;
+        width: 35px;
+        color: $blue;
+        // background-color: $bleue-claire;
+        border: 2px solid $gris;
+        border-radius: 50% 50% 50%  50%;
 
-            margin-right: 20px;
+         //--cette zone permet essentiellement de centrer--//
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+     //--cette zone permet essentiellement de centrer--//
+            
+           
             font-size: smaller;
-        }
-    }
+
+            }}
+    
 }
 
 form{
+
     @include font-size;
      div{
         width: 200px;
@@ -149,10 +187,12 @@ form{
            padding: 15px;
         }
         & input{
+            all: unset;
             border: 1px solid $gris;
-            
-        //  width: 200px;
-        // //  height: 40px;
+           &:focus{
+                border: 3px solid $blue;
+            }
+        
         }
         & label{
             // background-color: grey;
@@ -163,6 +203,10 @@ form{
             
                 background-color: $blue;
                 color: white;
+            &:hover{
+                background-color: $bleue-claire;
+                color: $blue;
+            }
         }
      }
 
@@ -243,71 +287,106 @@ form{
 }
 
 
+
+
 .thirdblock{
+
     // border: 1px solid green;
-    display: flex;
-    @include font-size_tab;
+    display: inline-flex;
+    @include font-size;
     font-family:'Raleway';
 
     & span{
+        
         // marg exterieur
-        margin: 10px ;
+        // margin: 10px ;
         //marge interieur
         padding-right: 15px;
-        @include typo-fontWeifgh_tab;
+        @include typo-fontWeifgh;
+        font-size: auto;
        
     }
     i{ 
+    //--cette zone permet essentiellement de centrer--//
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    //--cette zone permet essentiellement de centrer--//
+        height: 35px;
+        width: 35px;
         color: $blue;
         background-color: $bleue-claire;
         border: 2px solid $gris;
         border-radius: 50% 50% 50%  50%;
-        padding: 8px;
+
+        
+       
+        
         font-size: smaller
     }
-    &--span{
-        border: 1px solid $blue;
-        border-radius: 30px 30px 30px 30px;
-        padding: 5px;
+    &--div{
+        height: 39px;
+        width: 180px;
+        border: 2px solid $gris;
+        border-radius: 60px 60px 60px 60px;
+        margin-left: 20px;
+        &--s{
+            width: 250px;
+        }
     }
 
-    &--span:hover{
+    &--div:hover{
         color: white;
-        background-color: $blue;
+        background-color: $gris;
+        color: $blue;
+        & i{
+            color: $gris;
+                background-color: $blue;
+          
+        }
+     
     }
 
-  
+    
 }
 
 .lastblock{
+
     @include font-size_tab;
     margin-top: 20px;
     margin-bottom: 40px;
     font-family: 'Raleway';
 
-    // &--span{
-    //     color: red;
-    // }
-
-    & span{
+   
+    & div{
+        font-size: 15px;
+       
         & i{
-            color: $blue;
             
-            border: 2px solid $gris;
-            border-radius: 50% 50% 50%  50%;
-            
-            padding: 8px;
-            padding-left: 15px;
-            padding-right: 15px;
+           
+            height: 35px;
+        width: 35px;
+        color: $blue;
+        // background-color: $bleue-claire;
+        border: 2px solid $gris;
+        border-radius: 50% 50% 50%  50%;
 
-            margin-right: 20px;
-            font-size: smaller
-        }
-    }
+         //--cette zone permet essentiellement de centrer--//
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+     //--cette zone permet essentiellement de centrer--//
+            
+           
+            font-size: smaller;
+
+            }}
     
 }
+
+// form modifié
 form{
-    @include font-size_tab;
+    @include font-size;
      div{
         width: 200px;
        height: 50px;
@@ -323,20 +402,26 @@ form{
            padding: 15px;
         }
         & input{
+            all: unset;
             border: 1px solid $gris;
-            
-        //  width: 200px;
-        // //  height: 40px;
+           &:focus{
+                border: 3px solid $blue;
+            }
+        
         }
         & label{
             // background-color: grey;
             border-radius: 0px 20px 20px 0px;
             font-size: large;
             padding: 12px;
-            @include typo-fontWeifgh_tab;
+            @include typo-fontWeifgh;
             
                 background-color: $blue;
                 color: white;
+            &:hover{
+                background-color: $bleue-claire;
+                color: $blue;
+            }
         }
      }
 
@@ -357,6 +442,7 @@ form{
 
 
 @media screen and  (max-device-width :777px) {
+
 
     #seachsuite{
         display: inline;
@@ -432,122 +518,175 @@ form{
 }
 
 
+
 .thirdblock{
+
+    #filtre{
+        margin-bottom: 10px;
+    }
+    
     // border: 1px solid green;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    @include font-size_mob;
+    @include font-size;
     font-family:'Raleway';
 
     & span{
+        
         // marg exterieur
-        margin: 10px ;
-        
-        @include typo-fontWeifgh_mob;
-        
+        // margin: 10px ;
+        //marge interieur
+        padding-right: 15px;
+        @include typo-fontWeifgh;
+        font-size: 100%;
        
     }
     i{ 
+    //--cette zone permet essentiellement de centrer--//
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    //--cette zone permet essentiellement de centrer--//
+        height: 35px;
+        width: 35px;
         color: $blue;
         background-color: $bleue-claire;
         border: 2px solid $gris;
         border-radius: 50% 50% 50%  50%;
-        padding: 8px;
+
+        
+       
+        
         font-size: smaller
     }
-    &--span{
-        border: 1px solid $blue;
-        border-radius: 30px 30px 30px 30px;
-        padding: 5px;
-        width: 40% ; 
-    }
-    & div{
-        padding: 8px;
+    &--div{
+        height: 39px;
+        width: 240px;
+        border: 2px solid $gris;
+        border-radius: 60px 60px 60px 60px;
+        margin-left: 20px;
+        margin-bottom: 5px;
     }
 
-    &--span:hover{
+    &--div:hover{
         color: white;
-        background-color: $blue;
+        background-color: $gris;
+        color: $blue;
+        & i{
+            color: $gris;
+                background-color: $blue;
+          
+        }
+     
     }
 
+    
 }
 
 .lastblock{
+
+
     @include font-size_mob;
     margin-top: 20px;
     margin-bottom: 40px;
+    margin-left: 20px;
     font-family: 'Raleway';
 
     
 
     & div{
         font-size: 15px;
+       
         & i{
-            color: $blue;
             
-            border: 2px solid $gris;
-            border-radius: 50% 50% 50%  50%;
-            
-            padding: 8px;
-            padding-left: 15px;
-            padding-right: 15px;
+           
+            height: 35px;
+        width: 35px;
+        color: $blue;
+        // background-color: $bleue-claire;
+        border: 2px solid $gris;
+        border-radius: 50% 50% 50%  50%;
 
-            margin-right: 20px;
-            font-size: smaller
+         //--cette zone permet essentiellement de centrer--//
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+     //--cette zone permet essentiellement de centrer--//
+            
+           
+            font-size: smaller;
+
         }
     }
     
 }
+
 form{
+
+
+    all: unset;
     @include font-size_mob;
      div{
-        width: 200px;
+        width: auto;
        height: 80px;
         
         margin-bottom: 20px;
      }
      .form-div{
-        display:flex;
-        width: 30%;
-        // .fa-location-dot{
+            display:flex;
             
-        //     background-color:$gris;
-        //     // border-radius: 20px 0px 0px 20px;
-        //    padding: 15px;
-        // }
-        & input{
-            border: 1px solid $gris;
-            
+        &-i1{
+           
+            background-color:$gris;
+            border-radius: 20px 0px 0px 20px;
+            padding: 15px;
+            width: 40px;
+
+
+              //--centrage de l'icone--//
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            //--centrage de l'icone--//
+      
+        }
+         
         
-        }
-        // & label{
-        //     // background-color: grey;
-        //     border-radius: 0px 20px 20px 0px;
-        //     font-size: large;
-        //     padding: 12px;
-        //     @include typo-fontWeifgh_mob;
+            & input{
+                width: 40%;
+                border: 1px solid $gris;
+                &:focus{
+                    border: 1px solid $blue;
+                }
+                
             
-        //         background-color: $blue;
-        //         color: white;
-        // }
-        #seachsuite{
-            & i {
-                all: unset;
-              
-                font-size: large;
-                padding: 12px;
-                // @include typo-fontWeifgh_mob;
-                    // color: white;
             }
-            width: 130%;
-            background-color: $blue;
-            border-radius: 10px 10px 10px 10px;
             
-        }
-     }
+            #seachsuite{
+                 //--centrage de l'icone--//
+                 display: inline-flex;
+                 align-items: center;
+                 justify-content: center;
+             //--centrage de l'icone--//
+                & i{
+           
+                    // background-color: $blue;
+                    width: 40px;
+                }
+          
+               
+                background-color: $blue;
+                border-radius: 10px 10px 10px 10px;
 
-}
+                &:hover{
+                    background-color: $bleue-claire;
+                    color: $blue;
+                }
+                width:60px;
 
+               
+            }
+       }
 
-    
+} 
 }
