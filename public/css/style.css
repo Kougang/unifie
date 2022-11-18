@@ -2,6 +2,10 @@
   display: none;
 }
 
+#thirdblock-mobil-uniqu {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   .firstblock {
     min-width: 1300px;
@@ -290,6 +294,9 @@
   }
 }
 @media screen and (max-device-width: 777px) {
+  .thirdblock {
+    display: none;
+  }
   #seachsuite {
     display: inline;
   }
@@ -345,22 +352,64 @@
     font-family: "Raleway";
     font-size: 15px;
   }
-  .thirdblock {
-    display: inline-flex;
-    flex-direction: column;
+  #thirdblock-mobil-uniqu {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 20px;
     font-family: "Raleway";
   }
-  .thirdblock #filtre {
+  #thirdblock-mobil-uniqu #filtre {
     margin-bottom: 10px;
   }
-  .thirdblock span {
+  #thirdblock-mobil-uniqu--div1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1 {
+    height: 39px;
+    width: 240px;
+    border: 2px solid #F2F2F2;
+    border-radius: 60px 60px 60px 60px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1:hover {
+    color: white;
+    background-color: #F2F2F2;
+    color: #0065FC;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1:hover i {
+    color: #F2F2F2;
+    background-color: #0065FC;
+  }
+  #thirdblock-mobil-uniqu--div2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div2-2 {
+    height: 39px;
+    width: 240px;
+    border: 2px solid #F2F2F2;
+    border-radius: 60px 60px 60px 60px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div2-2:hover {
+    color: white;
+    background-color: #F2F2F2;
+    color: #0065FC;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div2-2:hover i {
+    color: #F2F2F2;
+    background-color: #0065FC;
+  }
+  #thirdblock-mobil-uniqu span {
     padding-right: 15px;
     font-weight: bold;
     font-family: "Raleway";
     font-size: 100%;
   }
-  .thirdblock i {
+  #thirdblock-mobil-uniqu i {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -372,20 +421,12 @@
     border-radius: 50% 50% 50% 50%;
     font-size: smaller;
   }
-  .thirdblock--div {
-    height: 39px;
-    width: 240px;
-    border: 2px solid #F2F2F2;
-    border-radius: 60px 60px 60px 60px;
-    margin-left: 20px;
-    margin-bottom: 5px;
-  }
-  .thirdblock--div:hover {
+  #thirdblock-mobil-uniqu--div-mobil-uniqu:hover {
     color: white;
     background-color: #F2F2F2;
     color: #0065FC;
   }
-  .thirdblock--div:hover i {
+  #thirdblock-mobil-uniqu--div-mobil-uniqu:hover i {
     color: #F2F2F2;
     background-color: #0065FC;
   }

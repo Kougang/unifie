@@ -12,9 +12,10 @@
 // --CHARGEMENT DU STYLE DESKTOP--
 
 // desactivation du trio de br dans le block aside, celui ci sera activé dans la version mobile uniquement--
-.br{
+.br {
     display: none;
 }
+
 
 @media all and (min-width: 992px)  {
     

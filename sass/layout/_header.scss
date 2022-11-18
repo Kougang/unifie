@@ -1,11 +1,18 @@
 
 
-// --CHARGEMENT DU STYLE DESKTOP--
 
 
-#seachsuite{
+// --- desactivation general pour les elemenys qui seront uniquement neccessaire dans le bloc mobile===//
+#seachsuite {
     display: none;
 }
+#thirdblock-mobil-uniqu{
+    display: none;
+}
+// --- desactivation general pour les elemenys qui seront uniquement neccessaire dans le bloc mobile===//
+
+
+// --CHARGEMENT DU STYLE DESKTOP--
 
 @media screen and (min-width: 992px) {
    
@@ -443,14 +450,23 @@ form{
 
 @media screen and  (max-device-width :777px) {
 
+    .thirdblock{
+        display: none;
+    }
 
     #seachsuite{
         display: inline;
     }
+  
+    
+
     label{
         display: none;
     }
-    
+
+//     .thirdblock-mobil-uniqu{
+//         display: inline;
+// }
 .firstblock{ 
     
     display: flex;
@@ -519,23 +535,84 @@ form{
 
 
 
-.thirdblock{
+#thirdblock-mobil-uniqu{
+    //activation du bloc dedie uniquement au mobile
+    display: flex;
+    flex-wrap: wrap;
+    
 
+ 
     #filtre{
         margin-bottom: 10px;
+       
     }
     
     // border: 1px solid green;
-    display: inline-flex;
-    flex-direction: column;
+   
+    // flex-direction: column;
     @include font-size;
     font-family:'Raleway';
+    &--div1{
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    .thirdblock-mobil-uniqu {
+        
+        &--div1-1 {
+            height: 39px;
+            width: 240px;
+            border: 2px solid $gris;
+            border-radius: 60px 60px 60px 60px;
+            margin-left: 30px;
+            margin-bottom: 5px;
+        }
+
+        &--div1-1:hover{
+            
+                color: white;
+                background-color: $gris;
+                color: $blue;
+                & i{
+                    color: $gris;
+                        background-color: $blue;
+                  
+                }
+    }
+}
+
+    &--div2{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .thirdblock-mobil-uniqu {
+        &--div2-2{
+                height: 39px;
+                width: 240px;
+                border: 2px solid $gris;
+                border-radius: 60px 60px 60px 60px;
+                margin-left: 30px;
+                margin-bottom: 5px;
+                
+            }
+            &--div2-2:hover{
+            
+                color: white;
+                background-color: $gris;
+                color: $blue;
+                & i{
+                    color: $gris;
+                        background-color: $blue;
+                  
+                }
+    }
+   }
 
     & span{
         
-        // marg exterieur
-        // margin: 10px ;
-        //marge interieur
+       
         padding-right: 15px;
         @include typo-fontWeifgh;
         font-size: 100%;
@@ -559,16 +636,8 @@ form{
         
         font-size: smaller
     }
-    &--div{
-        height: 39px;
-        width: 240px;
-        border: 2px solid $gris;
-        border-radius: 60px 60px 60px 60px;
-        margin-left: 20px;
-        margin-bottom: 5px;
-    }
-
-    &--div:hover{
+  
+    &--div-mobil-uniqu:hover{
         color: white;
         background-color: $gris;
         color: $blue;
