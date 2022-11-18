@@ -449,7 +449,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: smaller;
+    font-size: 9px;
   }
   form {
     all: unset;
