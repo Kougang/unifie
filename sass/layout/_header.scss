@@ -235,6 +235,7 @@ form{
 @media screen and (min-width: 778px) and (max-width: 991px){
     
 .firstblock{ 
+
     
 
     // border: 1px solid black;
@@ -451,7 +452,9 @@ form{
 @media screen and  (max-device-width :777px) {
 
     .thirdblock{
+
         display: none;
+        
     }
 
     #seachsuite{
@@ -468,50 +471,80 @@ form{
 //         display: inline;
 // }
 .firstblock{ 
-    
+    all: unset;
     display: flex;
     flex-direction: column;
+    align-content: stretch;
+
     // --centrage du premier bloc--//
 
-    align-items: center; //centrage vertical
-    justify-content: center; //centrage horizontale
+    // align-items: center; //centrage vertical
+    // justify-content: center; //centrage horizontale
    
    @include font-size_mob;
+//    &--img{
+//     @include dimensions-image_mob(40.5px , 80px);
+//     border-radius: unset;
+//     background-color: red;
+//     display: flex;
+//     align-items: center; //centrage vertical
+//     justify-content: center; //centrage horizontale
+// }
 
     & img{
         @include dimensions-image_mob(40.5px , 80px);
         border-radius: unset;
+        margin-left: 45%;
+
+        // background-color: red;
+        // display: flex;
+        // align-items: center; //centrage vertical
+        // justify-content: center; //centrage horizontale
     }
 
    
 
   &-ul{
-    display: flex;
 
+    display: flex;
+    // align-content: stretch;
+   
+    // flex-grow: round;
+    // width: 450px;
     &--li{
         list-style-type: none;
+        // width: 100%;
         & a{
             all:unset;
+           
         }
 
     }
+   
     &--li1{
-        border-top: 2px solid $blue;
+        // margin: none;
+        border: none;
+        border-bottom: 2px solid $blue;
+        width: 50%;
     }
     &--li2{
-        border-top: 2px solid $gris;
+        border: none;
+        border-bottom: 2px solid $gris;
+        width: 50%;
+        margin-right: 20px;
     }
  }
      li{
         padding:30px  ;
+        // flex-grow: stretch;
      }
-    //  ul :nth-child(1){
-    //     border-top: 2px solid $blue;
-    //  }
      li:hover{
+        // all: unset;
+        border: none;
         color: $blue;
-        border-top: 2px solid $blue;
+        border-bottom: 2px solid $blue;
      }
+    
 } 
 
 .secondblock{
