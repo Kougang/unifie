@@ -335,14 +335,31 @@
     // font-size: 30px;
     font-size: 125%;
 }
+// @media  screen and (max-width:600px) {
+
 @mixin etoiles_mob-ord($color-blue:rgb(15, 68, 244), $color-gray:gray){
     &_star{
         // padding-top: 50px;
         color:$color-blue;
-        font-size:$taille_etoiles_mob;
+        font-size:$taille_etoiles_mob-ord;
         & em{
             all: unset;
             color: $color-gray;
         }
     }
 }
+// }
+
+// @media  screen and ((max-width:777px) and (min-width:600px)) {
+    @mixin etoiles_mob-ord1($color-blue:rgb(15, 68, 244), $color-gray:gray){
+        &_star{
+            // padding-top: 50px;
+            color:$color-blue;
+            font-size:$taille_etoiles_mob-ord1;
+            & em{
+                all: unset;
+                color: $color-gray;
+            }
+        }
+    }
+// }

@@ -1100,6 +1100,7 @@ figcaption{
 
 
 
+
    
     // =========================================================//
     // ==activation du selecteur desactivé au debut de ce cour==//
@@ -1160,7 +1161,7 @@ figcaption{
     
             &-img{
                 // 400px
-                @include dimensions-image_mob(300px,300px);
+                @include dimensions-image_mob(200px,250px);
 
                 //forsage , en effet le border-raduis preccedent s'applique 
                 //mais la ligne suivante nous permet de forcer et d'avoir une autre forme de bordure
@@ -1175,20 +1176,20 @@ figcaption{
             &-caption11{
                
                 
-                @include etoiles_mob(rgb(15, 68, 244),gray);
+                @include etoiles_mob-ord1(rgb(15, 68, 244),gray);
                 &-img1{
                     @include typo-fontWeifgh_mob;
                 }
             }
             
             &-caption12{
-                @include etoiles_mob-ord;
+                @include etoiles_mob-ord1;
                 &-img1{
                     @include typo-fontWeifgh_mob;
                 }
             }
             &-caption13{
-                @include etoiles_mob-ord;
+                @include etoiles_mob-ord1;
                 &-img1{
                     @include typo-fontWeifgh_mob;
                 }
@@ -1470,6 +1471,7 @@ figcaption{
 
 
 @media  screen and (max-width:600px) {
+
     
 
 
@@ -1534,7 +1536,7 @@ figcaption{
     
             &-img{
                 // 400px
-                @include dimensions-image_mob(300px,200px);
+                @include dimensions-image_mob(200px,200px);
 
                 //forsage , en effet le border-raduis preccedent s'applique 
                 //mais la ligne suivante nous permet de forcer et d'avoir une autre forme de bordure
@@ -1549,20 +1551,20 @@ figcaption{
             &-caption11{
                
                 
-                @include etoiles_mob(rgb(15, 68, 244),gray);
+                @include etoiles_mob-ord;
                 &-img1{
                     @include typo-fontWeifgh_mob;
                 }
             }
             
             &-caption12{
-                @include etoiles_mob;
+                @include etoiles_mob-ord;
                 &-img1{
                     @include typo-fontWeifgh_mob;
                 }
             }
             &-caption13{
-                @include etoiles_mob;
+                @include etoiles_mob-ord;
                 &-img1{
                     @include typo-fontWeifgh_mob;
                 }

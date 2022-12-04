@@ -1723,14 +1723,14 @@
     margin-right: 30px;
   }
   main .aside-img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
     border-radius: 20px 20px 1px 1px;
     border-radius: 20px 1px 1px 20px;
   }
   main .aside-caption11_star {
     color: rgb(15, 68, 244);
-    font-size: 40px;
+    font-size: 30px;
   }
   main .aside-caption11_star em {
     all: unset;
@@ -1742,7 +1742,7 @@
   }
   main .aside-caption12_star {
     color: rgb(15, 68, 244);
-    font-size: 40px;
+    font-size: 30px;
   }
   main .aside-caption12_star em {
     all: unset;
@@ -1754,7 +1754,7 @@
   }
   main .aside-caption13_star {
     color: rgb(15, 68, 244);
-    font-size: 40px;
+    font-size: 30px;
   }
   main .aside-caption13_star em {
     all: unset;
@@ -2137,13 +2137,13 @@
   }
   main .aside-img {
     width: 200px;
-    height: 300px;
+    height: 200px;
     border-radius: 20px 20px 1px 1px;
     border-radius: 20px 1px 1px 20px;
   }
   main .aside-caption11_star {
     color: rgb(15, 68, 244);
-    font-size: 40px;
+    font-size: 20px;
   }
   main .aside-caption11_star em {
     all: unset;
@@ -2155,7 +2155,7 @@
   }
   main .aside-caption12_star {
     color: rgb(15, 68, 244);
-    font-size: 40px;
+    font-size: 20px;
   }
   main .aside-caption12_star em {
     all: unset;
@@ -2167,7 +2167,7 @@
   }
   main .aside-caption13_star {
     color: rgb(15, 68, 244);
-    font-size: 40px;
+    font-size: 20px;
   }
   main .aside-caption13_star em {
     all: unset;
