@@ -449,7 +449,7 @@ form{
 
 
 
-@media (max-width :777px)  {
+@media screen and (((max-device-width :777px) and (min-device-width:250px )) or ((max-width:777px) and (min-width:250px))) {
 
     .thirdblock{
 

@@ -244,6 +244,7 @@
 
 
 @mixin taille-couleur-bloc-aside-hebergement_mob($height:50%, $width:50%){
+    all:unset;
     height: $height;
        width: $width;
        background-color:$gris;
@@ -317,4 +318,31 @@
 }
 @mixin font-size2_mob{
     font-size: 40px;
+}
+
+
+// ====================================//
+// ====pour la version mobile ordi=====//
+// ====================================//
+
+
+@mixin font-size_mob-ord{
+    // font-size: 25px;
+    font-size: 120%;
+
+}
+@mixin font-size2_mob-ord{
+    // font-size: 30px;
+    font-size: 125%;
+}
+@mixin etoiles_mob-ord($color-blue:rgb(15, 68, 244), $color-gray:gray){
+    &_star{
+        // padding-top: 50px;
+        color:$color-blue;
+        font-size:$taille_etoiles_mob;
+        & em{
+            all: unset;
+            color: $color-gray;
+        }
+    }
 }
