@@ -697,6 +697,10 @@ figcaption{
     
 }
 
+// @media all and (min-width: 778px)and (max-width: 800px) {
+
+// }
+
 
 
 
@@ -1096,7 +1100,7 @@ figcaption{
 // //========================================
 
 
-@media  screen and ((max-width:777px) and (min-width:600px)) {
+@media  all and ((max-width:777px) and (min-width:600px)) {
 
 
 
@@ -1470,7 +1474,7 @@ figcaption{
 }
 
 
-@media  screen and (max-width:600px) {
+@media  all and (max-width:600px) {
 
     
 
