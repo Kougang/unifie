@@ -17,7 +17,7 @@
 }
 
 
-@media all and (min-width: 992px)  {
+@media screen and (min-width: 992px)  {
     
 
 html{
@@ -59,7 +59,7 @@ main{
             display: flex;
             flex-direction: column;
             // border: 1px solid red;
-            @include taille-couleur-bloc-aside-hebergement(650px,380px);
+            @include taille-couleur-bloc-aside-hebergement(650px,400px);
             margin-left: 40px;
 
             & h1{
@@ -175,7 +175,7 @@ main{
         }
 
         //    margin-top: 1px;
-                 @include taille-couleur-bloc-aside-hebergement(650px,900px);
+                 @include taille-couleur-bloc-aside-hebergement(650px,1000px);
                 // background-color: burlywood;
                 // border-radius: 20px;
                 // height: 120%;
@@ -208,7 +208,7 @@ main{
 //image active concerne les proprietes qui doivent s qpliquer a tous les images du bloc activité
  .img-activite{
     //taille de límage
-    @include dimensions-image(180px,289px);
+    @include dimensions-image(180px,325px);
 }
 
 //dernier bloc d'images
@@ -251,7 +251,7 @@ figcaption{
    #last-section--row1{
 
     //taille de límage
-    @include dimensions-image(445px,289px);
+    @include dimensions-image(445px,325px);
 
      //AGRANDISSEMENT FOND BLEU
    
@@ -262,7 +262,7 @@ figcaption{
 
    #last-section--row2{
     //taille de límage
-    @include dimensions-image(445px,289px);
+    @include dimensions-image(445px,295px);
   
 }
 
@@ -377,7 +377,7 @@ figcaption{
 
 
 
-@media all and (min-width: 778px)and (max-width: 991px) {
+@media screen and (min-width: 778px)and (max-width: 991px) {
     html{
         min-width: auto;
        
@@ -697,9 +697,7 @@ figcaption{
     
 }
 
-// @media all and (min-width: 778px)and (max-width: 800px) {
 
-// }
 
 
 
@@ -723,7 +721,7 @@ figcaption{
 
 
 
-@media screen and ((max-device-width:777px) ) {
+@media all and ((max-device-width:777px) ) {
 
    
     // =========================================================//
@@ -1100,7 +1098,7 @@ figcaption{
 // //========================================
 
 
-@media  screen and ((max-width:777px) and (min-width:600px)) {
+@media  ((max-width:777px) and (min-width:600px)) {
 
 
 
@@ -1474,7 +1472,7 @@ figcaption{
 }
 
 
-@media  screen and (max-width:600px) {
+@media   (max-width:600px) {
 
     
 

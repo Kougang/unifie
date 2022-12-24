@@ -510,7 +510,7 @@
   display: none;
 }
 
-@media all and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   html {
     width: auto;
   }
@@ -534,7 +534,7 @@
     display: flex;
     flex-direction: column;
     height: 650px;
-    width: 380px;
+    width: 400px;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-left: 40px;
@@ -706,7 +706,7 @@
   }
   main .hebergements {
     height: 650px;
-    width: 900px;
+    width: 1000px;
     background-color: #F2F2F2;
     border-radius: 20px;
   }
@@ -731,7 +731,7 @@
     display: flex;
   }
   main .img-activite {
-    width: 289px;
+    width: 325px;
     height: 180px;
     border-radius: 20px 20px 1px 1px;
   }
@@ -756,13 +756,13 @@
     margin: 15px;
   }
   main #last-section--row1 {
-    width: 289px;
+    width: 325px;
     height: 445px;
     border-radius: 20px 20px 1px 1px;
     margin-top: 5px;
   }
   main #last-section--row2 {
-    width: 289px;
+    width: 295px;
     height: 445px;
     border-radius: 20px 20px 1px 1px;
   }
@@ -893,7 +893,7 @@
     margin-left: 20px;
   }
 }
-@media all and (min-width: 778px) and (max-width: 991px) {
+@media screen and (min-width: 778px) and (max-width: 991px) {
   html {
     min-width: auto;
   }
@@ -1271,7 +1271,7 @@
     margin-left: 20px;
   }
 }
-@media screen and ((max-device-width: 777px)) {
+@media all and ((max-device-width: 777px)) {
   #populaire {
     padding-left: 20px;
   }
@@ -1684,7 +1684,7 @@
     margin-left: 20px;
   }
 }
-@media screen and ((max-width: 777px) and (min-width: 600px)) {
+@media ((max-width: 777px) and (min-width: 600px)) {
   #populaire {
     padding-left: 20px;
   }
@@ -2097,7 +2097,7 @@
     margin-left: 20px;
   }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   #populaire {
     padding-left: 20px;
   }
