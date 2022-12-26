@@ -416,6 +416,7 @@ figcaption{
                 flex-direction: column;
                 // border: 1px solid red;
                 @include taille-couleur-bloc-aside-hebergement_tab(100%,350px);
+                
                 margin-left: 40px;
     
                 & h1{
@@ -526,7 +527,7 @@ figcaption{
       
                      @include taille-couleur-bloc-aside-hebergement_tab(100%,600px);
                     
-                // border:  2px solid greenyellow;
+               
                    
                     &--bloc1{
                         display: flex;
@@ -767,8 +768,8 @@ figcaption{
             all:unset;
                 display: flex;
                 flex-direction: column;
-                // border: 1px solid red;
-                @include taille-couleur-bloc-aside-hebergement_mob(auto,100%);
+                // border: 3px solid red;
+                @include taille-couleur-bloc-aside-hebergement_tab(auto,100%);
               
                 & h1{
                     & i{
@@ -893,7 +894,7 @@ figcaption{
       
                      @include taille-couleur-bloc-aside-hebergement_mob(auto,100%);
                     
-                border:  2px solid greenyellow;
+                // border:  2px solid greenyellow;
                    
                     &--bloc1{
                         display: flex;

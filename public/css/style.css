@@ -1301,10 +1301,10 @@
     all: unset;
     display: flex;
     flex-direction: column;
-    all: unset;
     height: auto;
     width: 100%;
     background-color: #F2F2F2;
+    border-radius: 20px;
   }
   main .aside h1 i {
     float: right;
@@ -1478,7 +1478,6 @@
     height: auto;
     width: 100%;
     background-color: #F2F2F2;
-    border: 2px solid greenyellow;
   }
   main .hebergements--bloc1 {
     display: flex;
