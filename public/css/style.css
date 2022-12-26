@@ -510,7 +510,7 @@
   display: none;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   html {
     width: auto;
   }
@@ -788,6 +788,7 @@
     margin-left: 20px;
   }
   main .figure_last-section_row2 {
+    margin-left: 40px;
     border-radius: 20px;
     box-shadow: 0px 0px 5px 0px black;
   }
@@ -893,7 +894,7 @@
     margin-left: 20px;
   }
 }
-@media screen and (min-width: 778px) and (max-width: 991px) {
+@media (min-width: 778px) and (max-width: 991px) {
   html {
     min-width: auto;
   }

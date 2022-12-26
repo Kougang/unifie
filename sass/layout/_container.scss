@@ -17,7 +17,7 @@
 }
 
 
-@media screen and (min-width: 992px)  {
+@media  (min-width: 992px)  {
     
 
 html{
@@ -287,6 +287,8 @@ figcaption{
     .figure_last-section_row2{
         // display: flex;
         //     flex-direction: column;
+        margin-left: 40px;
+
         @include last-section-radius-shadow;
 
          //AGRANDISSEMENT FOND BLEU
@@ -300,8 +302,7 @@ figcaption{
         }}
 
 .figure_last-section_column10{
-    // display: flex;
-    //         flex-direction: column;
+   
     @include last-section-radius-shadow;
      //AGRANDISSEMENT FOND BLEU
      &:hover{
@@ -377,7 +378,7 @@ figcaption{
 
 
 
-@media screen and (min-width: 778px)and (max-width: 991px) {
+@media  (min-width: 778px)and (max-width: 991px) {
     html{
         min-width: auto;
        
