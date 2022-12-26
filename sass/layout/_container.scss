@@ -714,7 +714,7 @@ figcaption{
 // // ------------------------------
 
 
-@media all and (max-width:777px) {
+@media all and (max-device-width:777px) {
 
 
 
@@ -1469,376 +1469,376 @@ figcaption{
 // }
 
 
-@media   (max-width:620px) {
+// @media   (max-width:620px) {
 
     
 
 
 
    
-    // =========================================================//
-    // ==activation du selecteur desactivé au debut de ce cour==//
-    #populaire{
-        padding-left: 20px;
-    }
-    .br{
-        display: flex;
-    }
+//     // =========================================================//
+//     // ==activation du selecteur desactivé au debut de ce cour==//
+//     #populaire{
+//         padding-left: 20px;
+//     }
+//     .br{
+//         display: flex;
+//     }
    
 
-    figcaption{
-        @include font-size2_mob-ord;
+//     figcaption{
+//         @include font-size2_mob-ord;
 
-    }
+//     }
     
-     main{
+//      main{
        
-        section{
-            all: unset;
-        }
+//         section{
+//             all: unset;
+//         }
      
-        h1,span {
-            font-family:'Raleway';
-        }
+//         h1,span {
+//             font-family:'Raleway';
+//         }
     
-        @include font-size_mob-ord;
-        // .hebergemenets-aside{
-        //     min-width: 768px;
-        //     max-width: 991px;
-        //     border: 1px solid green;
-        // }
+//         @include font-size_mob-ord;
+//         // .hebergemenets-aside{
+//         //     min-width: 768px;
+//         //     max-width: 991px;
+//         //     border: 1px solid green;
+//         // }
     
     
-        figure{ 
-            all: unset;
+//         figure{ 
+//             all: unset;
            
-            & figcaption a {
-                all:unset;
-            }
-       }
+//             & figcaption a {
+//                 all:unset;
+//             }
+//        }
     
         
     
-        .aside{
-            all:unset;
-                display: flex;
-                flex-direction: column;
-                // border: 1px solid red;
-                @include taille-couleur-bloc-aside-hebergement_mob(auto,100%);
+//         .aside{
+//             all:unset;
+//                 display: flex;
+//                 flex-direction: column;
+//                 // border: 1px solid red;
+//                 @include taille-couleur-bloc-aside-hebergement_mob(auto,100%);
               
-                & h1{
-                    & i{
-                        float: right;
-                        margin-right: 30px;
-                    }
-                }
+//                 & h1{
+//                     & i{
+//                         float: right;
+//                         margin-right: 30px;
+//                     }
+//                 }
     
-            &-img{
-                // 400px
-                @include dimensions-image_mob(200px,200px);
+//             &-img{
+//                 // 400px
+//                 @include dimensions-image_mob(200px,200px);
 
-                //forsage , en effet le border-raduis preccedent s'applique 
-                //mais la ligne suivante nous permet de forcer et d'avoir une autre forme de bordure
-                border-radius : 20px 1px 1px 20px;
-                // ------------------------------------------------------------------------------------------------------------------
+//                 //forsage , en effet le border-raduis preccedent s'applique 
+//                 //mais la ligne suivante nous permet de forcer et d'avoir une autre forme de bordure
+//                 border-radius : 20px 1px 1px 20px;
+//                 // ------------------------------------------------------------------------------------------------------------------
                
-            }
+//             }
             
           
             
             
-            &-caption11{
+//             &-caption11{
                
                 
-                @include etoiles_mob-ord;
-                &-img1{
-                    @include typo-fontWeifgh_mob;
-                }
-            }
+//                 @include etoiles_mob-ord;
+//                 &-img1{
+//                     @include typo-fontWeifgh_mob;
+//                 }
+//             }
             
-            &-caption12{
-                @include etoiles_mob-ord;
-                &-img1{
-                    @include typo-fontWeifgh_mob;
-                }
-            }
-            &-caption13{
-                @include etoiles_mob-ord;
-                &-img1{
-                    @include typo-fontWeifgh_mob;
-                }
-            }
-            &-align{
+//             &-caption12{
+//                 @include etoiles_mob-ord;
+//                 &-img1{
+//                     @include typo-fontWeifgh_mob;
+//                 }
+//             }
+//             &-caption13{
+//                 @include etoiles_mob-ord;
+//                 &-img1{
+//                     @include typo-fontWeifgh_mob;
+//                 }
+//             }
+//             &-align{
                 
-                display: flex;
+//                 display: flex;
                
-                @include white-radius-background-aside_mob;
-                 //agrandissement fond bleu
-         &:hover{
-            @include agrandissement_generale;
-        }
+//                 @include white-radius-background-aside_mob;
+//                  //agrandissement fond bleu
+//          &:hover{
+//             @include agrandissement_generale;
+//         }
           
-            }
+//             }
     
-            &-caption{
-                margin-left: 20px;
+//             &-caption{
+//                 margin-left: 20px;
                
-            }
+//             }
            
            
-        }
+//         }
     
     
-    .img-heberegements
-        {
-            // @include  dimensions-image-pourcent(50%,80%)
-            @include last-section-radius-shadow_mob;
-            @include dimensions-image_mob(300px,100%);
+//     .img-heberegements
+//         {
+//             // @include  dimensions-image-pourcent(50%,80%)
+//             @include last-section-radius-shadow_mob;
+//             @include dimensions-image_mob(300px,100%);
            
-        }
-      .hebergement--figure{
-        display: flex;
-        flex-direction: column;
+//         }
+//       .hebergement--figure{
+//         display: flex;
+//         flex-direction: column;
        
-        @include  white-radius-background-hebergement-last_mob(auto , 95%);
+//         @include  white-radius-background-hebergement-last_mob(auto , 95%);
         
-        border: 1px solid black;
-         //agrandissement fond bleu
-         &:hover{
-            @include agrandissement_generale;
-        }
-      }
+//         border: 1px solid black;
+//          //agrandissement fond bleu
+//          &:hover{
+//             @include agrandissement_generale;
+//         }
+//       }
         
-        .figure_hebergements_bloc1{
-            &_caption11{
-                @include typo-fontWeifgh_mob;
-                @include etoiles_mob;
-            }
-            &_caption12{
-                @include typo-fontWeifgh_mob;
-                @include etoiles_mob;
-            }
-            &_caption13{
-                @include typo-fontWeifgh_mob;
-                @include etoiles_mob;
-            }
-        }
+//         .figure_hebergements_bloc1{
+//             &_caption11{
+//                 @include typo-fontWeifgh_mob;
+//                 @include etoiles_mob;
+//             }
+//             &_caption12{
+//                 @include typo-fontWeifgh_mob;
+//                 @include etoiles_mob;
+//             }
+//             &_caption13{
+//                 @include typo-fontWeifgh_mob;
+//                 @include etoiles_mob;
+//             }
+//         }
     
-        .figure_hebergements_bloc2{
-            &_caption21{
-                // font-size:$taille_etoiles;
-                @include typo-fontWeifgh_mob;
-                @include etoiles_mob;
-                // color: red;
-                @include font-size2_mob;
-            }
-            &_caption22{
-                @include typo-fontWeifgh_mob;
-               @include etoiles_mob;
-            }
-            &_caption23{
-                @include typo-fontWeifgh_mob;
-                &_star{
-                    color:$blue;
-                    font-size:$taille_etoiles_mob;
-                }
-            }
-        }
+//         .figure_hebergements_bloc2{
+//             &_caption21{
+//                 // font-size:$taille_etoiles;
+//                 @include typo-fontWeifgh_mob;
+//                 @include etoiles_mob;
+//                 // color: red;
+//                 @include font-size2_mob;
+//             }
+//             &_caption22{
+//                 @include typo-fontWeifgh_mob;
+//                @include etoiles_mob;
+//             }
+//             &_caption23{
+//                 @include typo-fontWeifgh_mob;
+//                 &_star{
+//                     color:$blue;
+//                     font-size:$taille_etoiles_mob;
+//                 }
+//             }
+//         }
     
-        .hebergements{
+//         .hebergements{
       
-                     @include taille-couleur-bloc-aside-hebergement_mob(auto,100%);
+//                      @include taille-couleur-bloc-aside-hebergement_mob(auto,100%);
                     
-                border:  2px solid greenyellow;
+//                 border:  2px solid greenyellow;
                    
-                    &--bloc1{
-                        display: flex;
-                        flex-direction: column;
-                    }
-                    &--bloc2{
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
+//                     &--bloc1{
+//                         display: flex;
+//                         flex-direction: column;
+//                     }
+//                     &--bloc2{
+//                         display: flex;
+//                         flex-direction: column;
+//                     }
+//                 }
     
        
     
-        .hebergements--bloc3-afficherPlus{
+//         .hebergements--bloc3-afficherPlus{
             
-            @include typo-fontWeifgh_mob;
-            margin-left: 40px;
-            & a{
-                all:unset;
-            }
-        }
+//             @include typo-fontWeifgh_mob;
+//             margin-left: 40px;
+//             & a{
+//                 all:unset;
+//             }
+//         }
         
-       .hebergemenets-aside{
-        display:flex;
-        flex-direction: column-reverse;
-       }
+//        .hebergemenets-aside{
+//         display:flex;
+//         flex-direction: column-reverse;
+//        }
     
     
     
-     //images du bloc activité
-    //image active concerne les proprietes qui doivent s qpliquer a tous les images du bloc activité
+//      //images du bloc activité
+//     //image active concerne les proprietes qui doivent s qpliquer a tous les images du bloc activité
 
 
-     .img-activite{
-        //taille de límage
-        @include dimensions-image_mob(300px,100%);
-    }
+//      .img-activite{
+//         //taille de límage
+//         @include dimensions-image_mob(300px,100%);
+//     }
     
-    //dernier bloc d'images
+//     //dernier bloc d'images
     
-       .last-section{
-        figcaption{
+//        .last-section{
+//         figcaption{
          
-            @include  margin-figcaption-last_mob;
-        }
+//             @include  margin-figcaption-last_mob;
+//         }
         
-        display: flex;
-        flex-direction: column;
+//         display: flex;
+//         flex-direction: column;
        
-        // width: 100%;
+//         // width: 100%;
         
         
-         &--column1{
-            display: flex;
-            flex-direction: column;
-        }
+//          &--column1{
+//             display: flex;
+//             flex-direction: column;
+//         }
        
-        &--column2{
-            display: flex;
-            flex-direction: column;
-            .white-radius-background-aside{
-        padding: 5px;
-        margin: 20px;
-        // border-radius: 20px ;
-        background-color: white;
-            }
+//         &--column2{
+//             display: flex;
+//             flex-direction: column;
+//             .white-radius-background-aside{
+//         padding: 5px;
+//         margin: 20px;
+//         // border-radius: 20px ;
+//         background-color: white;
+//             }
     
            
-        }
-       }
+//         }
+//        }
     
-    //class definissant le comportyement dans le selecteur figuer
+//     //class definissant le comportyement dans le selecteur figuer
     
-    .figure_last-section_class-generale{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
+//     .figure_last-section_class-generale{
+//         display: flex;
+//         flex-direction: column;
+//         margin: 20px;
     
-    }
+//     }
     
-       #last-section--row1{
-        //taille de límage
-        @include dimensions-image_mob(300px,100%);
-       }
+//        #last-section--row1{
+//         //taille de límage
+//         @include dimensions-image_mob(300px,100%);
+//        }
     
-       #last-section--row2{
-        //taille de límage
-        @include dimensions-image_mob(300px,100%);
-    }
+//        #last-section--row2{
+//         //taille de límage
+//         @include dimensions-image_mob(300px,100%);
+//     }
     
-    //actions dans la balise figure
+//     //actions dans la balise figure
     
-    .figure_last-section_row1{
-        // display: flex;
-        // flex-direction: column;
-        // @extend .last-section-radius-shadow;
-        @include  white-radius-background-hebergement-activite_mob(auto , 95%);
-         //agrandissement fond bleu
-         &:hover{
-            @include agrandissement_generale;
-        }
+//     .figure_last-section_row1{
+//         // display: flex;
+//         // flex-direction: column;
+//         // @extend .last-section-radius-shadow;
+//         @include  white-radius-background-hebergement-activite_mob(auto , 95%);
+//          //agrandissement fond bleu
+//          &:hover{
+//             @include agrandissement_generale;
+//         }
       
     
-        &_caption{
-            @include typo-fontWeifgh_mob;
-            @include padding-left_mob;
-        }}
+//         &_caption{
+//             @include typo-fontWeifgh_mob;
+//             @include padding-left_mob;
+//         }}
     
-        .figure_last-section_row2{
-            // display: flex;
-            //     flex-direction: column;
-            // @extend .last-section-radius-shadow;
-            // @extend .white-radius-background-hebergement-last;
-            @include  white-radius-background-hebergement-activite_mob(auto , 95%);
-             //agrandissement fond bleu
-         &:hover{
-            @include agrandissement_generale;
-        }
+//         .figure_last-section_row2{
+//             // display: flex;
+//             //     flex-direction: column;
+//             // @extend .last-section-radius-shadow;
+//             // @extend .white-radius-background-hebergement-last;
+//             @include  white-radius-background-hebergement-activite_mob(auto , 95%);
+//              //agrandissement fond bleu
+//          &:hover{
+//             @include agrandissement_generale;
+//         }
     
-            &_caption{
-                @include typo-fontWeifgh_mob;
-                @include padding-left_mob;
-            }}
+//             &_caption{
+//                 @include typo-fontWeifgh_mob;
+//                 @include padding-left_mob;
+//             }}
     
-    .figure_last-section_column10{
-        // display: flex;
-        //         flex-direction: column;
-        // @extend .last-section-radius-shadow;
-        // @extend .white-radius-background-hebergement-last;
-        @include  white-radius-background-hebergement-activite_mob(auto , 95%);
-         //agrandissement fond bleu
-         &:hover{
-            @include agrandissement_generale;
-        }
+//     .figure_last-section_column10{
+//         // display: flex;
+//         //         flex-direction: column;
+//         // @extend .last-section-radius-shadow;
+//         // @extend .white-radius-background-hebergement-last;
+//         @include  white-radius-background-hebergement-activite_mob(auto , 95%);
+//          //agrandissement fond bleu
+//          &:hover{
+//             @include agrandissement_generale;
+//         }
         
-        &_caption{
-            @include typo-fontWeifgh_mob;
-            @include padding-left_mob;
-        }}
+//         &_caption{
+//             @include typo-fontWeifgh_mob;
+//             @include padding-left_mob;
+//         }}
     
-        .figure_last-section_column11{
-            // display: flex;
-            //     flex-direction: column;
-            // @extend .last-section-radius-shadow;
-            // @extend .white-radius-background-hebergement-last;
-            @include  white-radius-background-hebergement-activite_mob(auto , 95%);
-             //agrandissement fond bleu
-         &:hover{
-            @include agrandissement_generale;
-        }
+//         .figure_last-section_column11{
+//             // display: flex;
+//             //     flex-direction: column;
+//             // @extend .last-section-radius-shadow;
+//             // @extend .white-radius-background-hebergement-last;
+//             @include  white-radius-background-hebergement-activite_mob(auto , 95%);
+//              //agrandissement fond bleu
+//          &:hover{
+//             @include agrandissement_generale;
+//         }
            
-            &_caption{
-                @include typo-fontWeifgh_mob;
-                @include padding-left_mob;
-            }}
+//             &_caption{
+//                 @include typo-fontWeifgh_mob;
+//                 @include padding-left_mob;
+//             }}
     
-            .figure_last-section_column20{
-                // display: flex;
-                // flex-direction: column;
-                // @extend .last-section-radius-shadow;
-                // @extend .white-radius-background-hebergement-last;
-                @include  white-radius-background-hebergement-activite_mob(auto , 95%);
-                 //agrandissement fond bleu
-                &:hover{
-                    @include agrandissement_generale;
-                }
+//             .figure_last-section_column20{
+//                 // display: flex;
+//                 // flex-direction: column;
+//                 // @extend .last-section-radius-shadow;
+//                 // @extend .white-radius-background-hebergement-last;
+//                 @include  white-radius-background-hebergement-activite_mob(auto , 95%);
+//                  //agrandissement fond bleu
+//                 &:hover{
+//                     @include agrandissement_generale;
+//                 }
                
-                &_caption{
-                    @include typo-fontWeifgh_mob;
-                    @include padding-left_mob;
-                }}
+//                 &_caption{
+//                     @include typo-fontWeifgh_mob;
+//                     @include padding-left_mob;
+//                 }}
     
-                .figure_last-section_column21{
+//                 .figure_last-section_column21{
                   
-                    // @extend .last-section-radius-shadow;
-                    // @extend .white-radius-background-hebergement-last;
-                    @include  white-radius-background-hebergement-activite_mob(auto , 95%);
-                     //agrandissement fond bleu
-                    &:hover{
-                        @include agrandissement_generale;
-                    }
+//                     // @extend .last-section-radius-shadow;
+//                     // @extend .white-radius-background-hebergement-last;
+//                     @include  white-radius-background-hebergement-activite_mob(auto , 95%);
+//                      //agrandissement fond bleu
+//                     &:hover{
+//                         @include agrandissement_generale;
+//                     }
                    
-                    &_caption{
-                        @include typo-fontWeifgh_mob;
-                        @include padding-left_mob;
-                    }}
+//                     &_caption{
+//                         @include typo-fontWeifgh_mob;
+//                         @include padding-left_mob;
+//                     }}
     
-    }
+//     }
     
     
     
-}
+// }
