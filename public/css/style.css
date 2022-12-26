@@ -1272,7 +1272,7 @@
     margin-left: 20px;
   }
 }
-@media all and (max-device-width: 777px) {
+@media screen and (max-device-width: 777px) {
   #populaire {
     padding-left: 20px;
   }
