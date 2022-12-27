@@ -697,6 +697,7 @@ figcaption{
     
     }
     // ==============================================
+    // breakpoint intermediaire=1 vers la version mobile desktop
     
 @media  (max-width:777px)  {
 
@@ -748,7 +749,7 @@ figcaption{
 
     
         .aside{
-            all:unset;
+            // all:unset;
                 display: flex;
                 flex-direction: column;
                 // min-width: 500px;
@@ -1074,7 +1075,8 @@ figcaption{
     //===============================================
     
     // ==============================================
-    @media   (max-width:620px) {
+    // breakpoint intermediaire=2 vers la version mobile desktop
+@media   (max-width:600px) {
 
     
 
@@ -1125,7 +1127,7 @@ figcaption{
             
         
             .aside{
-                all:unset;
+                // all:unset;
                     display: flex;
                     flex-direction: column;
                     // border: 1px solid red;

@@ -293,7 +293,7 @@
     color: #0065FC;
   }
 }
-@media screen and (((max-device-width: 777px) and (min-device-width: 250px)) or ((max-width: 777px) and (min-width: 250px))) {
+@media screen and (((max-device-width: 777px))) {
   .thirdblock {
     display: none;
   }
@@ -1298,7 +1298,6 @@
     all: unset;
   }
   main .aside {
-    all: unset;
     display: flex;
     flex-direction: column;
     all: unset;
@@ -1685,7 +1684,7 @@
     margin-left: 20px;
   }
 }
-@media (max-width: 991px) and (max-width: 620px) {
+@media (max-width: 991px) and (max-width: 600px) {
   #populaire {
     padding-left: 20px;
   }
@@ -1711,7 +1710,6 @@
     all: unset;
   }
   main .aside {
-    all: unset;
     display: flex;
     flex-direction: column;
     all: unset;
@@ -2622,7 +2620,7 @@
     font-family: "Raleway";
   }
 }
-@media (max-width: 777px) {
+@media (max-device-width: 777px) {
   footer {
     width: 100%;
     height: auto;
