@@ -123,6 +123,58 @@ footer{
     }
 }
 }
+@media screen and (max-width :777px)  {
+    
+    footer{
+        width: 100%;
+        height: auto;
+    
+    
+        display: flex;
+        flex-direction: column;
+        background-color:$gris;
+        margin-top: 50px;
+        
+        @include font-size_mob;
+    
+        & div{
+            & a{
+                all: unset;
+                margin-top: 10px;
+            }
+        }
+    
+        .firstfooter{
+            
+            @include footer-element_mob(5%);
+            font-family: 'Raleway';
+    
+         & :nth-child(1){
+        
+            @include typo-fontWeifgh_mob;
+         }
+        }
+        .secondfooter{
+            
+            @include footer-element_mob(5%);
+            font-family: 'Raleway';
+    
+        & :nth-child(1){
+            @include typo-fontWeifgh_mob;
+        }
+    }
+    
+        .thirdfooter{
+            
+            @include  footer-element_mob(5%);
+            font-family: 'Raleway';
+        & :nth-child(1){
+            @include typo-fontWeifgh_mob;
+        }
+    }
+    }
+        
+    }
 
 }
 
@@ -137,7 +189,7 @@ footer{
 
 
 
-@media   ((max-device-width :777px) or (max-width :777px))  {
+@media   (max-device-width :777px)  {
     
 footer{
     width: 100%;

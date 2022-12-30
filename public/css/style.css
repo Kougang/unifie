@@ -2311,7 +2311,64 @@ html footer {
     font-family: "Raleway";
   }
 }
-@media ((max-device-width: 777px) or (max-width: 777px)) {
+@media screen and (max-width: 992px) and (max-width: 777px) {
+  footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+    font-size: 35px;
+  }
+  footer div a {
+    all: unset;
+    margin-top: 10px;
+  }
+  footer .firstfooter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-family: "Raleway";
+  }
+  footer .firstfooter span {
+    margin-top: 20px;
+  }
+  footer .firstfooter :nth-child(1) {
+    font-weight: bold;
+    font-family: "Raleway";
+  }
+  footer .secondfooter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-family: "Raleway";
+  }
+  footer .secondfooter span {
+    margin-top: 20px;
+  }
+  footer .secondfooter :nth-child(1) {
+    font-weight: bold;
+    font-family: "Raleway";
+  }
+  footer .thirdfooter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-family: "Raleway";
+  }
+  footer .thirdfooter span {
+    margin-top: 20px;
+  }
+  footer .thirdfooter :nth-child(1) {
+    font-weight: bold;
+    font-family: "Raleway";
+  }
+}
+@media (max-device-width: 777px) {
   footer {
     width: 100%;
     height: auto;
