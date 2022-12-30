@@ -18,7 +18,10 @@
    
 
 .firstblock{ 
-    min-width:1300px;
+    all: unset;
+    // border: 3px solid red;
+    width:100%;
+
    
 
    
@@ -38,7 +41,13 @@
    
 
   &-ul{
+    all: unset;
+
     display: flex;
+    // border: 3px solid blue;
+    height: 100px;
+    // padding-top: ;
+
 
     &--li{
         list-style-type: none;
@@ -48,18 +57,20 @@
 
     }
     &--li1{
-        border-top: 2px solid $blue;
+        border-top: 3px solid $blue;
     }
  }
      li{
-        padding:30px  ;
+        padding-left:30px  ;
+        // padding-bottom:30px  ;
+        padding-top:30px  ;
      }
     //  ul :nth-child(1){
     //     border-top: 2px solid $blue;
     //  }
      li:hover{
         color: $blue;
-        border-top: 2px solid $blue;
+        border-top: 3px solid $blue;
      }
 } 
 
@@ -230,18 +241,19 @@ form{
 
 
 
+// and (min-width: 778px)
 
-
-@media screen and (min-width: 778px) and (max-width: 991px){
-    
+@media screen  and (max-width: 992px){
 .firstblock{ 
 
-    
 
     // border: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    // width: 100%;
+
     @include font-size_tab;
 
     & img{
@@ -254,7 +266,6 @@ form{
 
   &-ul{
     display: flex;
-
     &--li{
         list-style-type: none;
         & a{
@@ -301,6 +312,7 @@ form{
 
     // border: 1px solid green;
     display: inline-flex;
+    flex-wrap: wrap;
     @include font-size;
     font-family:'Raleway';
 
@@ -338,6 +350,8 @@ form{
         border: 2px solid $gris;
         border-radius: 60px 60px 60px 60px;
         margin-left: 20px;
+        margin-top: 5px;
+
         &--s{
             width: 250px;
         }
@@ -449,7 +463,7 @@ form{
 //  and (min-device-width:250px )) or ((max-width:777px) and (min-width:250px)
 
 
-@media screen and (((max-device-width :777px))) {
+@media screen and (((max-device-width :777px))or ((max-width:777px))) {
 
     .thirdblock{
 

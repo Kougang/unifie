@@ -57,6 +57,19 @@
         }
     }
 }
+@mixin  etoiles-ord-asid($color-blue:rgb(15, 68, 244), $color-gray:gray){
+    &_star{
+        color:$color-blue;
+        font-size:$taille_etoiles-ord-asid;
+        & em{
+            all: unset;
+            color: $color-gray;
+        }
+    }
+
+}
+    
+
 
 @mixin taille-couleur-bloc-aside-hebergement($heignt:100px,$width:100px){
     height: $heignt;
@@ -243,11 +256,11 @@
 
 
 
-@mixin taille-couleur-bloc-aside-hebergement_mob($height:50%, $width:50%){
+@mixin taille-couleur-bloc-aside-hebergement_mob($height:50%, $width:50%){ 
     all:unset;
     height: $height;
        width: $width;
-       background-color:$gris;
+    //    background-color: $gris;
     //    border-radius: 20px;
 
 }
@@ -255,17 +268,17 @@
     padding: 5px;
     margin: 20px;
     border-radius: 20px ;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px black;
     background-color: white;
     width: $width;
     height: $heigth;
 }
 
-@mixin  white-radius-background-hebergement-activite_mob($heigth:auto , $width:300px) {
+@mixin  white-radius-background-hebergement-activite_mob($heigth:auto , $width:auto) {
     // padding: 5px;
     // margin: 20px;
     border-radius: 20px ;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 20px 0px black;
     background-color: white;
     width: $width;
     height: $heigth;
