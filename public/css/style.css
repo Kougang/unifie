@@ -525,6 +525,10 @@ html {
 html header {
   padding-left: 40px;
 }
+html footer {
+  margin-bottom: -10px;
+  margin-left: 8px;
+}
 
 @media (min-width: 992px) {
   main {
@@ -545,7 +549,7 @@ html header {
     display: flex;
     flex-direction: column;
     height: 650px;
-    width: 100%;
+    width: 95%;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-left: 5%;
@@ -2171,11 +2175,6 @@ html header {
     margin-left: 20px;
   }
 }
-footer {
-  margin-bottom: -10px;
-  margin-left: 8px;
-}
-
 @media screen and (min-width: 992px) {
   footer {
     width: 100%;

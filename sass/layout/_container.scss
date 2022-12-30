@@ -28,6 +28,11 @@ html{
         // decalage de tous les blocs de cette ensemble  de 40 px vers la droite
     padding-left: 40px;
     }
+
+    
+footer{ margin-bottom: -10px; 
+    margin-left: 8px;
+}
 }
 
 
@@ -85,7 +90,7 @@ main{
             display: flex;
             flex-direction: column;
             // border: 1px solid red;
-            @include taille-couleur-bloc-aside-hebergement(650px,100%);
+            @include taille-couleur-bloc-aside-hebergement(650px,95%);
             margin-left: 5%;
 
             & h1{
