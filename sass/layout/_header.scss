@@ -231,10 +231,6 @@ form{
 }
 }
 
-
-
-
-
 // // ---------------------------------------
 // // --CHARGEMENT DU STYLE TABLETTE--
 // // ---------------------------------------
@@ -243,7 +239,8 @@ form{
 
 // and (min-width: 778px)
 
-@media screen  and (max-width: 992px){
+@media screen  and (max-width: 992px)and (min-width: 778px)
+{
 .firstblock{ 
 
 
@@ -451,10 +448,6 @@ form{
 
 }
 
-
-
-
-
 // // ------------------------------
 // // --CHARGEMENT DU STYLE mobile--
 // // ------------------------------
@@ -463,7 +456,7 @@ form{
 //  and (min-device-width:250px )) or ((max-width:777px) and (min-width:250px)
 
 
-@media screen and (((max-device-width :777px))or ((max-width:777px))) {
+@media screen and ((max-device-width :777px) or (max-width:777px)){
 
     .thirdblock{
 

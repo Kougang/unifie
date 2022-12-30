@@ -9,7 +9,7 @@
 
 
 // footer{ margin-bottom: -10px; 
-//     // margin-left: 8px;
+//     margin-left: 8px;
 // }
 
 @media screen and (min-width: 992px) {
@@ -65,9 +65,6 @@ footer{
 }
 
 
-
-
-
 // // ---------------------------------------
 // // --CHARGEMENT DU STYLE TABLETTE--
 // // ---------------------------------------
@@ -75,9 +72,9 @@ footer{
 
 
 
+//  (min-width: 778px) and
 
-
-@media screen and (min-width: 778px) and (max-width: 991px){
+@media screen and (max-width: 992px){
     
 footer{
     // min-width: 778px;
@@ -128,11 +125,6 @@ footer{
 }
 
 }
-
-
-
-
-
 
 
 // // ------------------------------
