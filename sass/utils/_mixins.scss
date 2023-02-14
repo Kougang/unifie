@@ -59,6 +59,7 @@
 }
 @mixin  etoiles-ord-asid($color-blue:rgb(15, 68, 244), $color-gray:gray){
     &_star{
+        all: unset;
         color:$color-blue;
         font-size:$taille_etoiles-ord-asid;
         & em{
@@ -102,6 +103,9 @@
 @mixin white-radius-background-aside-hebergement{
     padding: 5px;
     margin: 20px;
+    // margin-left: 20px;
+    // margin-right: 20px;
+
     border-radius: 20px ;
     background-color: white;
    
@@ -109,11 +113,14 @@
 @mixin last-section-radius-shadow{
     // border :2px solid red;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px $bleue-claire;
 }
 // celui est celui de l'entete et le footer
 @mixin font-size{
     font-size: 20px;
+}
+@mixin font-size-firstblock-ord{
+    font-size: 15px;
 }
 // celui ci est celui des images
 @mixin font-size2{
@@ -154,6 +161,7 @@
 //mixin definissant la coloration des etoiles presents
 @mixin etoiles_tab($color-blue:rgb(15, 68, 244), $color-gray:gray){
     &_star{
+       
         color:$color-blue;
         font-size:$taille_etoiles;
         & em{
@@ -168,6 +176,11 @@
        width: $width;
        background-color: $gris;
        border-radius: 20px;
+       margin-right: unset;
+    //    margin-right: 20px;
+    //    border-color: 2px solid green;
+    //    margin-left: -5px;
+       
 
 }
 //TYPO MIGRÉ
@@ -199,7 +212,7 @@
 @mixin last-section-radius-shadow_tab{
     // border :2px solid red;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px $bleue-claire;
 }
 @mixin font-size_tab{
     font-size: 15px;
@@ -264,11 +277,25 @@
     //    border-radius: 20px;
 
 }
+
+@mixin taille-couleur-bloc-aside-hebergement_mob1($height:50%, $width:50%){
+    height: $height;
+       width: $width;
+    //    background-color: $gris;
+       border-radius: 20px;
+       margin-right: unset;
+    //    margin-right: 20px;
+    //    border-color: 2px solid green;
+    //    margin-left: -5px;
+       
+
+}
+
 @mixin  white-radius-background-hebergement-last_mob($heigth:auto , $width:300px) {
     padding: 5px;
     margin: 20px;
     border-radius: 20px ;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0px 0px 10px 0px $bleue-claire;
     background-color: white;
     width: $width;
     height: $heigth;
@@ -278,7 +305,7 @@
     // padding: 5px;
     // margin: 20px;
     border-radius: 20px ;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px $bleue-claire;
     background-color: white;
     width: $width;
     height: $heigth;
@@ -327,7 +354,10 @@
     // box-shadow: 0px 0px 5px 0px black;
 }
 @mixin font-size_mob{
-    font-size: 35px;
+    font-size: 15px;
+}
+@mixin font-size_mob-secondblock{
+    font-size: 20px;
 }
 @mixin font-size2_mob{
     font-size: 40px;

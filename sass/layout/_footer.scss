@@ -14,17 +14,25 @@
 
 @media screen and (min-width: 992px) {
 
+    .foo{
+        all:unset;
+        display: flex;
+        margin-left: -2.5%;
+        // border: 2px solid green;
+     
+    }
 footer{
-    width:100%;
+    // width:100%;
     
-    display: flex;
     background-color:$gris;
     margin-top: 50px;
+
     // margin-bottom: -10px;
     // margin-left: 10px;
 
     height: 100%;
     @include font-size;
+   
 
     & div{
         & a{
@@ -75,15 +83,21 @@ footer{
 //  (min-width: 778px) and
 
 @media screen and (max-width: 992px){
-    
+    .foo{
+        all:unset;
+        display: flex;
+        margin-left: -20px;
+        // border: 2px solid blue;
+     
+    }
 footer{
     // min-width: 778px;
     // max-width: 991px;
-    width: 100%;
+    width: auto;
 
    
 
-    display: flex;
+    // display: flex;
     background-color:$gris;
     margin-top: 50px;
     height: 200px;
@@ -190,14 +204,82 @@ footer{
 
 
 @media   (max-device-width :777px)  {
-    
+    .foo{
+        all:unset;
+        display: flex;
+        flex-direction: column;
+
+        // margin-left: -20px;
+        // border: 2px solid yellow;
+
+     
+    }
 footer{
     width: 100%;
     height: auto;
 
 
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    background-color:$gris;
+    margin-top: 50px;
+    
+    @include font-size_mob;
+
+    & div{
+        & a{
+            all: unset;
+            margin-top: 10px;
+        }
+    }
+
+    .firstfooter{
+        
+        @include footer-element_mob(5%);
+        font-family: 'Raleway';
+
+     & :nth-child(1){
+    
+        @include typo-fontWeifgh_mob;
+     }
+    }
+    .secondfooter{
+        
+        @include footer-element_mob(5%);
+        font-family: 'Raleway';
+
+    & :nth-child(1){
+        @include typo-fontWeifgh_mob;
+    }
+}
+
+    .thirdfooter{
+        
+        @include  footer-element_mob(5%);
+        font-family: 'Raleway';
+    & :nth-child(1){
+        @include typo-fontWeifgh_mob;
+    }
+}
+}
+    
+}
+// mobile ordinateur
+@media   (max-width :777px)  {
+    .foo{
+        all:unset;
+        display: flex;
+        flex-direction: column;
+
+        // margin-left: -5%;
+        // border: 2px solid greenyellow;
+     
+    }
+footer{
+    width: auto;
+    height: auto;
+
+
+    // display: flex;
     background-color:$gris;
     margin-top: 50px;
     

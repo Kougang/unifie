@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    font-size: 20px;
+    font-size: 15px;
   }
   .firstblock img {
     width: 80px;
@@ -25,8 +25,10 @@
   }
   .firstblock-ul {
     all: unset;
+    cursor: pointer;
     display: flex;
     height: 100px;
+    font-family: "Raleway";
   }
   .firstblock-ul--li {
     list-style-type: none;
@@ -36,10 +38,12 @@
   }
   .firstblock-ul--li1 {
     border-top: 3px solid #0065FC;
+    color: #0065FC;
   }
   .firstblock li {
     padding-left: 30px;
     padding-top: 30px;
+    text-align: center;
   }
   .firstblock li:hover {
     color: #0065FC;
@@ -55,6 +59,7 @@
     font-family: "Raleway";
   }
   .secondblock-s2 {
+    font-size: 15px;
     margin-top: 1px;
     font-family: "Raleway";
   }
@@ -62,55 +67,76 @@
     display: inline-flex;
     font-size: 20px;
     font-family: "Raleway";
+    flex-wrap: wrap;
   }
   .thirdblock span {
     padding-right: 15px;
     font-weight: bold;
     font-family: "Raleway";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: auto;
+    border: 2px solid #F2F2F2;
+    text-align: center;
+    border-radius: 0px 60px 60px 0px;
+    padding-bottom: 2px;
+    margin-left: -30px;
+    padding-left: 30px;
+    border-left: unset;
+  }
+  .thirdblock span:hover {
+    color: white;
+    background-color: #F2F2F2;
+    color: #0065FC;
   }
   .thirdblock i {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 35px;
-    width: 35px;
+    height: 49px;
+    width: 49px;
     color: #0065FC;
     background-color: #DEEBFF;
-    border: 2px solid #F2F2F2;
     border-radius: 50% 50% 50% 50%;
+    position: sticky;
     font-size: smaller;
   }
   .thirdblock--div {
-    height: 39px;
-    width: auto;
-    border: 1px solid #F2F2F2;
-    border-radius: 60px 60px 60px 60px;
+    cursor: pointer;
+    border-radius: 0px 60px 60px 0px;
     margin-left: 20px;
   }
-  .thirdblock--div:hover {
-    color: white;
-    background-color: #F2F2F2;
-    color: #0065FC;
-  }
-  .thirdblock--div:hover i {
+  .thirdblock--div i:hover {
     color: #F2F2F2;
     background-color: #0065FC;
+  }
+  .thirdblock #filtre {
+    all: unset;
+    margin-top: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    font-family: "Raleway";
+    font-size: 100%;
   }
   .lastblock {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 40px;
     font-family: "Raleway";
+    display: flex;
   }
   .lastblock div {
-    font-size: 15px;
+    font-size: 18px;
   }
   .lastblock div i {
-    height: 35px;
-    width: 35px;
+    height: 20px;
+    width: 20px;
     color: #0065FC;
     border: 2px solid #F2F2F2;
     border-radius: 50% 50% 50% 50%;
+    margin-right: 10px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -127,6 +153,13 @@
   form .form-div {
     display: flex;
   }
+  form .form-div input::placeholder {
+    color: black;
+    font-weight: bold;
+    font-family: "Raleway";
+    padding-left: 20px;
+    font-size: 18px;
+  }
   form .form-div i {
     background-color: #F2F2F2;
     border-radius: 20px 0px 0px 20px;
@@ -137,7 +170,7 @@
     border: 1px solid #F2F2F2;
   }
   form .form-div input:focus {
-    border: 3px solid #0065FC;
+    border: 1px solid #0065FC;
   }
   form .form-div label {
     border-radius: 0px 20px 20px 0px;
@@ -153,8 +186,10 @@
     color: #0065FC;
   }
 }
-@media screen and (max-width: 992px) and (min-width: 778px) {
+@media screen and (max-width: 992px) and (min-width: 777px) {
   .firstblock {
+    all: unset;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -168,7 +203,11 @@
     border-radius: unset;
   }
   .firstblock-ul {
+    all: unset;
+    cursor: pointer;
     display: flex;
+    height: 100px;
+    font-family: "Raleway";
   }
   .firstblock-ul--li {
     list-style-type: none;
@@ -177,18 +216,21 @@
     all: unset;
   }
   .firstblock-ul--li1 {
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
   }
   .firstblock li {
-    padding: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: center;
   }
   .firstblock li:hover {
     color: #0065FC;
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
   }
   .secondblock {
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 20px;
   }
   .secondblock-s1 {
     font-weight: bold;
@@ -198,66 +240,84 @@
   .secondblock-s2 {
     margin-top: 1px;
     font-family: "Raleway";
+    font-size: 15px;
   }
   .thirdblock {
     display: inline-flex;
     flex-wrap: wrap;
     font-size: 20px;
     font-family: "Raleway";
+    cursor: pointer;
   }
   .thirdblock span {
     padding-right: 15px;
     font-weight: bold;
     font-family: "Raleway";
     font-size: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: auto;
+    border: 2px solid #F2F2F2;
+    text-align: center;
+    border-radius: 0px 60px 60px 0px;
+    padding-bottom: 2px;
+    margin-left: -30px;
+    padding-left: 30px;
+    border-left: unset;
+  }
+  .thirdblock span:hover {
+    color: white;
+    background-color: #F2F2F2;
+    color: #0065FC;
   }
   .thirdblock i {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 35px;
-    width: 35px;
+    height: 49px;
+    width: 49px;
     color: #0065FC;
     background-color: #DEEBFF;
-    border: 2px solid #F2F2F2;
     border-radius: 50% 50% 50% 50%;
+    position: sticky;
     font-size: smaller;
   }
   .thirdblock--div {
-    height: 39px;
-    width: 180px;
-    border: 2px solid #F2F2F2;
     border-radius: 60px 60px 60px 60px;
     margin-left: 20px;
     margin-top: 5px;
   }
-  .thirdblock--div--s {
-    width: 250px;
-  }
-  .thirdblock--div:hover {
-    color: white;
-    background-color: #F2F2F2;
-    color: #0065FC;
-  }
-  .thirdblock--div:hover i {
+  .thirdblock--div i:hover {
     color: #F2F2F2;
     background-color: #0065FC;
+  }
+  .thirdblock #filtre {
+    all: unset;
+    margin-top: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    font-family: "Raleway";
+    font-size: 100%;
   }
   .lastblock {
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 40px;
     font-family: "Raleway";
+    display: flex;
   }
   .lastblock div {
-    font-size: 15px;
+    font-size: 18px;
   }
   .lastblock div i {
-    height: 35px;
-    width: 35px;
+    height: 20px;
+    width: 20px;
     color: #0065FC;
     border: 2px solid #F2F2F2;
     border-radius: 50% 50% 50% 50%;
+    margin-right: 10px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -265,6 +325,13 @@
   }
   form {
     font-size: 20px;
+  }
+  form input::placeholder {
+    color: black;
+    font-weight: bold;
+    font-family: "Raleway";
+    padding-left: 20px;
+    font-size: 18px;
   }
   form div {
     width: 200px;
@@ -284,7 +351,7 @@
     border: 1px solid #F2F2F2;
   }
   form .form-div input:focus {
-    border: 3px solid #0065FC;
+    border: 1px solid #0065FC;
   }
   form .form-div label {
     border-radius: 0px 20px 20px 0px;
@@ -300,7 +367,7 @@
     color: #0065FC;
   }
 }
-@media screen and ((max-device-width: 777px) or (max-width: 777px)) {
+@media screen and (max-device-width: 777px) {
   .thirdblock {
     display: none;
   }
@@ -315,7 +382,9 @@
     display: flex;
     flex-direction: column;
     align-content: stretch;
-    font-size: 35px;
+    margin-left: -40px;
+    cursor: pointer;
+    font-size: 15px;
   }
   .firstblock img {
     width: 80px;
@@ -326,6 +395,8 @@
   }
   .firstblock-ul {
     display: flex;
+    justify-content: space-around;
+    font-family: "Raleway";
   }
   .firstblock-ul--li {
     list-style-type: none;
@@ -335,28 +406,296 @@
   }
   .firstblock-ul--li1 {
     border: none;
-    border-bottom: 2px solid #0065FC;
-    width: 50%;
+    border-bottom: 3px solid #0065FC;
+    width: 55%;
+    text-align: center;
+    margin-left: -30px;
+    color: #0065FC;
   }
   .firstblock-ul--li2 {
     border: none;
-    border-bottom: 2px solid #F2F2F2;
-    width: 50%;
-    margin-right: 20px;
+    border-bottom: 3px solid #F2F2F2;
+    width: 55%;
+    text-align: center;
+    margin-right: -8px;
   }
   .firstblock li {
-    padding: 30px;
+    padding-bottom: 30px;
   }
   .firstblock li:hover {
     border: none;
     color: #0065FC;
-    border-bottom: 2px solid #0065FC;
+    border-bottom: 3px solid #0065FC;
+  }
+  .secondblock {
+    margin-left: -20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .secondblock-s1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-family: "Raleway";
+    font-family: "Raleway";
+  }
+  .secondblock-s2 {
+    margin-top: 1px;
+    font-family: "Raleway";
+    font-size: 15px;
+  }
+  #thirdblock-mobil-uniqu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    font-size: 20px;
+    font-family: "Raleway";
+  }
+  #thirdblock-mobil-uniqu--div1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1 {
+    margin-left: 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1 i:hover {
+    color: #F2F2F2;
+    background-color: #0065FC;
+    border-color: #DEEBFF;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1 span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: auto;
+    border: 2px solid #F2F2F2;
+    text-align: center;
+    border-radius: 0px 60px 60px 0px;
+    margin-left: -30px;
+    padding-left: 30px;
+    border-left: unset;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1 span:hover {
+    color: white;
+    background-color: #F2F2F2;
+    color: #0065FC;
+  }
+  #thirdblock-mobil-uniqu--div2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div2-2 {
+    margin-left: 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div2-2 i:hover {
+    color: #F2F2F2;
+    background-color: #0065FC;
+  }
+  #thirdblock-mobil-uniqu span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: auto;
+    border: 2px solid #F2F2F2;
+    text-align: center;
+    border-radius: 0px 60px 60px 0px;
+    margin-left: -30px;
+    padding-left: 30px;
+    border-left: unset;
+  }
+  #thirdblock-mobil-uniqu span:hover {
+    color: white;
+    background-color: #F2F2F2;
+    color: #0065FC;
+  }
+  #thirdblock-mobil-uniqu span {
+    padding-right: 15px;
+    font-weight: bold;
+    font-family: "Raleway";
+    font-size: 100%;
+  }
+  #thirdblock-mobil-uniqu i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: 2px solid #DEEBFF;
+    border-bottom: 2px;
+    border-radius: 50% 50% 50% 50%;
+    position: sticky;
+    font-size: smaller;
+  }
+  #thirdblock-mobil-uniqu #filtre {
+    all: unset;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    font-weight: bold;
+    font-family: "Raleway";
+    font-size: 100%;
+  }
+  .lastblock {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: -20px;
+    font-family: "Raleway";
+    display: flex;
+  }
+  .lastblock div {
+    font-size: 18px;
+  }
+  .lastblock div i {
+    height: 20px;
+    width: 20px;
+    color: #0065FC;
+    margin-right: 10px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50% 50% 50% 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+  }
+  .lastblock--div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  form {
+    all: unset;
+    font-size: 15px;
+  }
+  form input::placeholder {
+    color: black;
+    font-weight: bold;
+    font-family: "Raleway";
+    padding-left: 20px;
+    font-size: 18px;
+  }
+  form div {
+    width: auto;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  form .form-div {
+    display: flex;
+    margin-left: -20px;
+  }
+  form .form-div-i1 {
+    background-color: #F2F2F2;
+    border-radius: 20px 0px 0px 20px;
+    padding: 15px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form .form-div input {
+    all: unset;
+    width: 90%;
+    border: 1px solid #F2F2F2;
+  }
+  form .form-div input:focus {
+    border: 1px solid #0065FC;
+  }
+  form .form-div #seachsuite {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0065FC;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: -8px;
+    color: white;
+    width: 60px;
+  }
+  form .form-div #seachsuite i {
+    width: 40px;
+  }
+  form .form-div #seachsuite:hover {
+    background-color: #DEEBFF;
+    color: #0065FC;
+  }
+}
+@media screen and (max-width: 777px) {
+  html #header--main {
+    margin-left: unset;
+    margin-right: unset;
+  }
+  .thirdblock {
+    display: none;
+  }
+  #seachsuite {
+    display: inline;
+  }
+  label {
+    display: none;
+  }
+  .firstblock {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    margin-left: -20px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .firstblock img {
+    width: 80px;
+    height: 40.5px;
+    border-radius: 20px 20px 1px 1px;
+    border-radius: unset;
+    margin-left: 45%;
+  }
+  .firstblock-ul {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Raleway";
+  }
+  .firstblock-ul--li {
+    list-style-type: none;
+  }
+  .firstblock-ul--li a {
+    all: unset;
+  }
+  .firstblock-ul--li1 {
+    border: none;
+    border-bottom: 3px solid #0065FC;
+    width: 57%;
+    text-align: center;
+    margin-left: -30px;
+    color: #0065FC;
+  }
+  .firstblock-ul--li2 {
+    border: none;
+    border-bottom: 3px solid #F2F2F2;
+    width: 55%;
+    text-align: center;
+    margin-right: -8px;
+  }
+  .firstblock li {
+    padding-bottom: 30px;
+  }
+  .firstblock li:hover {
+    border: none;
+    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
   }
   .secondblock {
     margin-bottom: 20px;
-    font-size: 35px;
+    margin-left: 10px;
+    font-size: 20px;
   }
   .secondblock-s1 {
+    display: flex;
+    flex-wrap: wrap;
     font-weight: bold;
     font-family: "Raleway";
     font-family: "Raleway";
@@ -372,50 +711,69 @@
     font-size: 20px;
     font-family: "Raleway";
   }
-  #thirdblock-mobil-uniqu #filtre {
-    margin-bottom: 10px;
-  }
   #thirdblock-mobil-uniqu--div1 {
     display: flex;
     flex-direction: column;
   }
   #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1 {
-    height: 39px;
-    width: 240px;
-    border: 2px solid #F2F2F2;
-    border-radius: 60px 60px 60px 60px;
     margin-left: 30px;
     margin-bottom: 5px;
+    cursor: pointer;
   }
-  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1:hover {
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1 i:hover {
+    color: #F2F2F2;
+    background-color: #0065FC;
+    border-color: #DEEBFF;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1 span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: auto;
+    border: 2px solid #F2F2F2;
+    text-align: center;
+    border-radius: 0px 60px 60px 0px;
+    margin-left: -30px;
+    padding-left: 30px;
+    border-left: unset;
+  }
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1 span:hover {
     color: white;
     background-color: #F2F2F2;
     color: #0065FC;
-  }
-  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div1-1:hover i {
-    color: #F2F2F2;
-    background-color: #0065FC;
   }
   #thirdblock-mobil-uniqu--div2 {
     display: flex;
     flex-direction: column;
   }
   #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div2-2 {
-    height: 39px;
-    width: 240px;
-    border: 2px solid #F2F2F2;
-    border-radius: 60px 60px 60px 60px;
     margin-left: 30px;
     margin-bottom: 5px;
+    cursor: pointer;
   }
-  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div2-2:hover {
+  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div2-2 i:hover {
+    color: #F2F2F2;
+    background-color: #0065FC;
+  }
+  #thirdblock-mobil-uniqu span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: auto;
+    border: 2px solid #F2F2F2;
+    text-align: center;
+    border-radius: 0px 60px 60px 0px;
+    margin-left: -30px;
+    padding-left: 30px;
+    padding-bottom: 2px;
+    border-left: unset;
+  }
+  #thirdblock-mobil-uniqu span:hover {
     color: white;
     background-color: #F2F2F2;
     color: #0065FC;
-  }
-  #thirdblock-mobil-uniqu .thirdblock-mobil-uniqu--div2-2:hover i {
-    color: #F2F2F2;
-    background-color: #0065FC;
   }
   #thirdblock-mobil-uniqu span {
     padding-right: 15px;
@@ -427,37 +785,40 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 35px;
-    width: 35px;
+    height: 49px;
+    width: 49px;
     color: #0065FC;
     background-color: #DEEBFF;
-    border: 2px solid #F2F2F2;
+    border-bottom: 2px;
     border-radius: 50% 50% 50% 50%;
+    position: sticky;
     font-size: smaller;
   }
-  #thirdblock-mobil-uniqu--div-mobil-uniqu:hover {
-    color: white;
-    background-color: #F2F2F2;
-    color: #0065FC;
-  }
-  #thirdblock-mobil-uniqu--div-mobil-uniqu:hover i {
-    color: #F2F2F2;
-    background-color: #0065FC;
+  #thirdblock-mobil-uniqu #filtre {
+    all: unset;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-right: 15px;
+    font-weight: bold;
+    font-family: "Raleway";
+    font-size: 100%;
   }
   .lastblock {
-    font-size: 35px;
+    font-size: 15px;
     margin-top: 20px;
     margin-bottom: 40px;
-    margin-left: 20px;
+    margin-left: 10px;
     font-family: "Raleway";
+    display: flex;
   }
   .lastblock div {
-    font-size: 15px;
+    font-size: 18px;
   }
   .lastblock div i {
-    height: 35px;
-    width: 35px;
+    height: 20px;
+    width: 20px;
     color: #0065FC;
+    margin-right: 10px;
     border: 2px solid #F2F2F2;
     border-radius: 50% 50% 50% 50%;
     display: inline-flex;
@@ -465,13 +826,25 @@
     justify-content: center;
     font-size: 9px;
   }
+  .lastblock--div {
+    display: flex;
+    flex-wrap: wrap;
+  }
   form {
     all: unset;
-    font-size: 35px;
+    font-size: 15px;
+  }
+  form input::placeholder {
+    color: black;
+    font-weight: bold;
+    font-family: "Raleway";
+    padding-left: 20px;
+    font-size: 18px;
   }
   form div {
     width: auto;
-    height: 80px;
+    height: 50px;
+    margin-left: 10px;
     margin-bottom: 20px;
   }
   form .form-div {
@@ -487,7 +860,8 @@
     justify-content: center;
   }
   form .form-div input {
-    width: 40%;
+    all: unset;
+    width: 90%;
     border: 1px solid #F2F2F2;
   }
   form .form-div input:focus {
@@ -499,6 +873,8 @@
     justify-content: center;
     background-color: #0065FC;
     border-radius: 10px 10px 10px 10px;
+    margin-left: -8px;
+    color: white;
     width: 60px;
   }
   form .form-div #seachsuite i {
@@ -520,20 +896,20 @@
 html {
   all: unset;
   margin-top: -8px;
-  margin-left: -15px;
   width: auto;
 }
-html header {
-  padding-left: 40px;
+html #header--main {
+  margin-left: 2%;
+  margin-right: 2%;
 }
 html footer {
   margin-bottom: -10px;
-  margin-left: 8px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 @media (min-width: 992px) {
   main {
-    padding-left: 40px;
     font-size: 15px;
   }
   main h1, main span {
@@ -549,28 +925,39 @@ html footer {
   main .aside {
     display: flex;
     flex-direction: column;
-    height: 650px;
-    width: 95%;
+    height: 680px;
+    width: 400px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-left: 5%;
   }
   main .aside #populaire {
-    padding-left: 20px;
-  }
-  main .aside h1 i {
-    float: right;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
   }
   main .aside-img {
     width: 120px;
-    height: 115px;
+    height: 130px;
     border-radius: 20px 20px 1px 1px;
     border-radius: 20px 1px 1px 20px;
   }
+  main .aside .aside-caption11-motant1 {
+    display: block;
+    margin-bottom: 20px;
+  }
+  main .aside .aside-caption12-motant2 {
+    display: block;
+    margin-bottom: 20px;
+  }
+  main .aside .aside-caption13-motant3 {
+    display: block;
+    margin-bottom: 20px;
+  }
   main .aside-caption11_star {
+    all: unset;
     color: rgb(15, 68, 244);
-    font-size: 100%;
+    font-size: 12px;
   }
   main .aside-caption11_star em {
     all: unset;
@@ -581,8 +968,9 @@ html footer {
     font-family: "Raleway";
   }
   main .aside-caption12_star {
+    all: unset;
     color: rgb(15, 68, 244);
-    font-size: 100%;
+    font-size: 12px;
   }
   main .aside-caption12_star em {
     all: unset;
@@ -593,8 +981,9 @@ html footer {
     font-family: "Raleway";
   }
   main .aside-caption13_star {
+    all: unset;
     color: rgb(15, 68, 244);
-    font-size: 100%;
+    font-size: 12px;
   }
   main .aside-caption13_star em {
     all: unset;
@@ -610,11 +999,11 @@ html footer {
     margin: 20px;
     border-radius: 20px;
     background-color: white;
-    width: 90%;
+    width: auto;
   }
   main .aside-align:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -627,9 +1016,6 @@ html footer {
   main .aside-caption {
     margin-left: 20px;
   }
-  main .hebergements--bloc1-mise-en-forme, main .hebergements--bloc2-mise-en-forme {
-    margin-right: 5%;
-  }
   main .img-heberegements {
     width: 100%;
     height: 100px;
@@ -638,15 +1024,19 @@ html footer {
   main .hebergement--figure {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 5px;
     margin: 20px;
     border-radius: 20px;
     background-color: white;
-    width: 90%;
+    width: 80%;
+  }
+  main .hebergement--figure .transparent {
+    opacity: 0;
   }
   main .hebergement--figure:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -656,16 +1046,13 @@ html footer {
       transform: scale(1.1);
     }
   }
-  main .figure_hebergements_bloc1 {
-    min-width: 100%;
-  }
   main .figure_hebergements_bloc1_caption11 {
     font-weight: bold;
     font-family: "Raleway";
   }
   main .figure_hebergements_bloc1_caption11_star {
     color: rgb(15, 68, 244);
-    font-size: large;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc1_caption11_star em {
     all: unset;
@@ -677,7 +1064,7 @@ html footer {
   }
   main .figure_hebergements_bloc1_caption12_star {
     color: rgb(15, 68, 244);
-    font-size: large;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc1_caption12_star em {
     all: unset;
@@ -689,23 +1076,19 @@ html footer {
   }
   main .figure_hebergements_bloc1_caption13_star {
     color: rgb(15, 68, 244);
-    font-size: large;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc1_caption13_star em {
     all: unset;
     color: gray;
   }
-  main .figure_hebergements_bloc2 {
-    width: 100%;
-  }
   main .figure_hebergements_bloc2_caption21 {
-    font-size: large;
     font-weight: bold;
     font-family: "Raleway";
   }
   main .figure_hebergements_bloc2_caption21_star {
     color: rgb(15, 68, 244);
-    font-size: large;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc2_caption21_star em {
     all: unset;
@@ -717,7 +1100,7 @@ html footer {
   }
   main .figure_hebergements_bloc2_caption22_star {
     color: rgb(15, 68, 244);
-    font-size: large;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc2_caption22_star em {
     all: unset;
@@ -729,13 +1112,14 @@ html footer {
   }
   main .figure_hebergements_bloc2_caption23_star {
     color: blue;
-    font-size: large;
+    font-size: 12px;
   }
   main .hebergements {
-    height: 650px;
-    width: 75%;
+    height: 680px;
+    width: 80%;
     background-color: #F2F2F2;
     border-radius: 20px;
+    margin-right: 5%;
   }
   main .hebergements #Hebergements {
     padding-left: 20px;
@@ -756,16 +1140,25 @@ html footer {
   }
   main .hebergemenets-aside {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    width: auto;
   }
   main .img-activite {
     width: 100%;
     height: 180px;
     border-radius: 20px 20px 1px 1px;
   }
+  main #Activités {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+  main b {
+    opacity: 0; /*.transparant*/
+  }
   main .last-section {
     display: flex;
-    width: 100%;
+    width: auto;
+    justify-content: space-between;
   }
   main .last-section--column1 {
     display: flex;
@@ -784,43 +1177,35 @@ html footer {
   }
   main .last-section--row1 {
     all: unset;
-    width: 30%;
+    width: 22%;
   }
   main .last-section--row2 {
     all: unset;
-    width: 35%;
+    width: 22%;
   }
   main #last-section--row1 {
     width: 100%;
-    height: 445px;
+    height: 455px;
     border-radius: 20px 20px 1px 1px;
   }
   main #last-section--row2 {
     width: 100%;
-    height: 445px;
+    height: 455px;
     border-radius: 20px 20px 1px 1px;
   }
   main .last-section--column1 {
-    width: 20%;
+    width: 22%;
   }
   main .last-section--column2 {
-    width: 20%;
-  }
-  main .last-section--row1 {
-    width: auto;
-  }
-  main .last-section--row2 {
-    width: auto;
+    width: 22%;
   }
   main .figure_last-section_row1 {
-    width: 85%;
-    margin-right: 80px;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
   }
   main .figure_last-section_row1:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -835,15 +1220,12 @@ html footer {
     font-family: "Raleway";
   }
   main .figure_last-section_row2 {
-    width: 75%;
-    margin-left: 40px;
-    margin-left: 60px;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
   }
   main .figure_last-section_row2:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -859,14 +1241,13 @@ html footer {
     margin-left: 20px;
   }
   main .figure_last-section_column10 {
-    width: 100%;
     margin-bottom: 40px;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
   }
   main .figure_last-section_column10:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -882,13 +1263,12 @@ html footer {
     margin-left: 20px;
   }
   main .figure_last-section_column11 {
-    width: 100%;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
   }
   main .figure_last-section_column11:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -904,14 +1284,13 @@ html footer {
     margin-left: 20px;
   }
   main .figure_last-section_column20 {
-    width: 100%;
     margin-bottom: 40px;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
   }
   main .figure_last-section_column20:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -926,13 +1305,12 @@ html footer {
     font-family: "Raleway";
   }
   main .figure_last-section_column21 {
-    width: 100%;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
   }
   main .figure_last-section_column21:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -950,13 +1328,6 @@ html footer {
 @media (max-width: 992px) {
   html {
     min-width: auto;
-  }
-  #populaire {
-    padding-left: 20px;
-  }
-  #populaire h1 i {
-    float: right;
-    margin-right: 30px;
   }
   figcaption {
     margin: 5px;
@@ -979,15 +1350,17 @@ html footer {
   main .aside {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 350px;
+    height: 600px;
+    width: 320px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-left: 40px;
+    margin-right: unset;
   }
-  main .aside h1 i {
-    float: right;
-    margin-right: 30px;
+  main .aside #populaire {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
   }
   main .aside-img {
     width: 80px;
@@ -996,8 +1369,9 @@ html footer {
     border-radius: 20px 1px 1px 20px;
   }
   main .aside-caption11_star {
+    all: unset;
     color: rgb(15, 68, 244);
-    font-size: 100%;
+    font-size: 12px;
   }
   main .aside-caption11_star em {
     all: unset;
@@ -1008,8 +1382,9 @@ html footer {
     font-family: "Raleway";
   }
   main .aside-caption12_star {
+    all: unset;
     color: rgb(15, 68, 244);
-    font-size: 100%;
+    font-size: 12px;
   }
   main .aside-caption12_star em {
     all: unset;
@@ -1020,8 +1395,9 @@ html footer {
     font-family: "Raleway";
   }
   main .aside-caption13_star {
+    all: unset;
     color: rgb(15, 68, 244);
-    font-size: 100%;
+    font-size: 12px;
   }
   main .aside-caption13_star em {
     all: unset;
@@ -1038,9 +1414,21 @@ html footer {
     border-radius: 20px;
     background-color: white;
   }
+  main .aside-align .aside-caption11-motant1 {
+    display: block;
+    margin-bottom: 3px;
+  }
+  main .aside-align .aside-caption12-motant2 {
+    display: block;
+    margin-bottom: 3px;
+  }
+  main .aside-align .aside-caption13-motant3 {
+    display: block;
+    margin-bottom: 3px;
+  }
   main .aside-align:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1055,7 +1443,7 @@ html footer {
   }
   main .img-heberegements {
     width: 100%;
-    height: 90px;
+    height: 70px;
     border-radius: 20px 20px 1px 1px;
   }
   main .hebergement--figure {
@@ -1065,11 +1453,14 @@ html footer {
     margin: 20px;
     border-radius: 20px;
     background-color: white;
-    width: 80%;
+    height: auto;
+  }
+  main .hebergement--figure .transparent {
+    opacity: 0;
   }
   main .hebergement--figure:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1085,7 +1476,7 @@ html footer {
   }
   main .figure_hebergements_bloc1_caption11_star {
     color: rgb(15, 68, 244);
-    font-size: large;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc1_caption11_star em {
     all: unset;
@@ -1097,7 +1488,7 @@ html footer {
   }
   main .figure_hebergements_bloc1_caption12_star {
     color: rgb(15, 68, 244);
-    font-size: large;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc1_caption12_star em {
     all: unset;
@@ -1109,7 +1500,7 @@ html footer {
   }
   main .figure_hebergements_bloc1_caption13_star {
     color: rgb(15, 68, 244);
-    font-size: large;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc1_caption13_star em {
     all: unset;
@@ -1121,7 +1512,7 @@ html footer {
   }
   main .figure_hebergements_bloc2_caption21_star {
     color: rgb(15, 68, 244);
-    font-size: large;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc2_caption21_star em {
     all: unset;
@@ -1133,7 +1524,7 @@ html footer {
   }
   main .figure_hebergements_bloc2_caption22_star {
     color: rgb(15, 68, 244);
-    font-size: large;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc2_caption22_star em {
     all: unset;
@@ -1145,16 +1536,18 @@ html footer {
   }
   main .figure_hebergements_bloc2_caption23_star {
     color: blue;
-    font-size: large;
+    font-size: 12px;
   }
   main #Hebergements {
     padding-left: 20px;
   }
   main .hebergements {
-    height: 100%;
-    width: 600px;
+    height: 600px;
+    width: 60%;
     background-color: #F2F2F2;
     border-radius: 20px;
+    margin-right: unset;
+    margin-right: 3%;
   }
   main .hebergements--bloc1 {
     display: flex;
@@ -1172,10 +1565,12 @@ html footer {
   }
   main .hebergemenets-aside {
     display: flex;
-    margin-left: 40px;
+    justify-content: space-between;
+    width: auto;
   }
   main #Activités {
-    margin-left: 40px;
+    margin-left: 5px;
+    margin-top: 60px;
   }
   main .img-activite {
     width: 100%;
@@ -1183,23 +1578,24 @@ html footer {
     border-radius: 20px 20px 1px 1px;
   }
   main .last-section--column1 {
-    width: 28%;
+    width: 22%;
   }
   main .last-section--column2 {
-    width: 28%;
+    width: 22%;
   }
   main .last-section--row1 {
-    width: auto;
-    margin-right: 30px;
+    width: 22%;
   }
   main .last-section--row2 {
-    width: auto;
-    margin-left: 10px;
+    width: 22%;
   }
   main .last-section {
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    margin-left: 20px;
+  }
+  main .last-section b {
+    opacity: 0;
   }
   main .last-section--column1 {
     display: flex;
@@ -1212,7 +1608,6 @@ html footer {
   main .figure_last-section_class-generale {
     display: flex;
     flex-direction: column;
-    margin: 20px;
   }
   main #last-section--row1 {
     width: 100%;
@@ -1225,13 +1620,12 @@ html footer {
     border-radius: 20px 20px 1px 1px;
   }
   main .figure_last-section_row1 {
-    width: 95%;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
   }
   main .figure_last-section_row1:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1247,13 +1641,12 @@ html footer {
     margin-left: 20px;
   }
   main .figure_last-section_row2 {
-    width: 85%;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
   }
   main .figure_last-section_row2:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1270,11 +1663,13 @@ html footer {
   }
   main .figure_last-section_column10 {
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
+    margin-bottom: unset;
+    margin-bottom: 40px;
   }
   main .figure_last-section_column10:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1291,11 +1686,11 @@ html footer {
   }
   main .figure_last-section_column11 {
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
   }
   main .figure_last-section_column11:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1312,11 +1707,13 @@ html footer {
   }
   main .figure_last-section_column20 {
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
+    margin-bottom: unset;
+    margin-bottom: 40px;
   }
   main .figure_last-section_column20:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1333,11 +1730,11 @@ html footer {
   }
   main .figure_last-section_column21 {
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
   }
   main .figure_last-section_column21:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1354,17 +1751,16 @@ html footer {
   }
 }
 @media (max-width: 992px) and (max-width: 778px) {
-  #populaire {
-    padding-left: 20px;
-  }
-  .br {
-    display: flex;
+  html #header--main {
+    margin-left: unset;
+    margin-right: unset;
   }
   figcaption {
     font-size: 125%;
   }
   main {
     font-size: 120%;
+    font-size: 15px;
   }
   main section {
     all: unset;
@@ -1378,19 +1774,25 @@ html footer {
   main figure figcaption a {
     all: unset;
   }
+  main div {
+    background-color: #F2F2F2;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
   main .aside {
     all: unset;
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
-    background-color: #F2F2F2;
     border-radius: 20px;
+    margin-right: unset;
     border-radius: unset;
   }
-  main .aside h1 i {
-    float: right;
-    margin-right: 30px;
+  main .aside #populaire {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
   }
   main .aside-img {
     width: 200px;
@@ -1398,9 +1800,21 @@ html footer {
     border-radius: 20px 20px 1px 1px;
     border-radius: 20px 1px 1px 20px;
   }
+  main .aside .aside-caption11-motant1 {
+    display: block;
+    margin-bottom: 65px;
+  }
+  main .aside .aside-caption12-motant2 {
+    display: block;
+    margin-bottom: 45px;
+  }
+  main .aside .aside-caption13-motant3 {
+    display: block;
+    margin-bottom: 60px;
+  }
   main .aside-caption11_star {
     color: rgb(15, 68, 244);
-    font-size: 20px;
+    font-size: 12px;
   }
   main .aside-caption11_star em {
     all: unset;
@@ -1412,7 +1826,7 @@ html footer {
   }
   main .aside-caption12_star {
     color: rgb(15, 68, 244);
-    font-size: 20px;
+    font-size: 12px;
   }
   main .aside-caption12_star em {
     all: unset;
@@ -1424,7 +1838,7 @@ html footer {
   }
   main .aside-caption13_star {
     color: rgb(15, 68, 244);
-    font-size: 20px;
+    font-size: 12px;
   }
   main .aside-caption13_star em {
     all: unset;
@@ -1440,10 +1854,12 @@ html footer {
     margin: 20px;
     border-radius: 20px;
     background-color: white;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
   }
   main .aside-align:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1455,12 +1871,16 @@ html footer {
   }
   main .aside-caption {
     margin-left: 20px;
+    font-size: 15px;
   }
   main .img-heberegements {
-    border-radius: 20px;
     width: 100%;
-    height: 300px;
+    height: 180px;
     border-radius: 20px 20px 1px 1px;
+  }
+  main #Hebergements {
+    margin-left: -11px;
+    font-size: 20px;
   }
   main .hebergement--figure {
     display: flex;
@@ -1468,14 +1888,17 @@ html footer {
     padding: 5px;
     margin: 20px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
     background-color: white;
-    width: 95%;
+    width: 100%;
     height: auto;
+    margin: unset;
+    margin-bottom: 20px;
+    margin-left: 10px;
   }
   main .hebergement--figure:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1491,7 +1914,7 @@ html footer {
   }
   main .figure_hebergements_bloc1_caption11_star {
     color: rgb(15, 68, 244);
-    font-size: 30px;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc1_caption11_star em {
     all: unset;
@@ -1503,7 +1926,7 @@ html footer {
   }
   main .figure_hebergements_bloc1_caption12_star {
     color: rgb(15, 68, 244);
-    font-size: 30px;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc1_caption12_star em {
     all: unset;
@@ -1515,7 +1938,7 @@ html footer {
   }
   main .figure_hebergements_bloc1_caption13_star {
     color: rgb(15, 68, 244);
-    font-size: 30px;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc1_caption13_star em {
     all: unset;
@@ -1524,11 +1947,10 @@ html footer {
   main .figure_hebergements_bloc2_caption21 {
     font-weight: bold;
     font-family: "Raleway";
-    font-size: 40px;
   }
   main .figure_hebergements_bloc2_caption21_star {
     color: rgb(15, 68, 244);
-    font-size: 30px;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc2_caption21_star em {
     all: unset;
@@ -1540,7 +1962,7 @@ html footer {
   }
   main .figure_hebergements_bloc2_caption22_star {
     color: rgb(15, 68, 244);
-    font-size: 30px;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc2_caption22_star em {
     all: unset;
@@ -1552,20 +1974,25 @@ html footer {
   }
   main .figure_hebergements_bloc2_caption23_star {
     color: #0065FC;
-    font-size: 30px;
+    font-size: 12px;
   }
   main .hebergements {
     all: unset;
     height: auto;
-    width: 100%;
+    width: 98%;
+  }
+  main .hebergements div {
+    all: unset;
   }
   main .hebergements--bloc1 {
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
   }
   main .hebergements--bloc2 {
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
   }
   main .hebergements--bloc3-afficherPlus {
     font-weight: bold;
@@ -1573,7 +2000,7 @@ html footer {
   }
   main .hebergements--bloc3-afficherPlus a {
     all: unset;
-    margin-left: 20px;
+    margin-left: 10px;
   }
   main .hebergemenets-aside {
     all: unset;
@@ -1582,27 +2009,37 @@ html footer {
   }
   main .img-activite {
     width: 100%;
-    height: 300px;
+    height: 180px;
     border-radius: 20px 20px 1px 1px;
   }
   main .last-section--column1 {
     width: 100%;
+    margin-right: 20px;
   }
   main .last-section--column2 {
     width: 100%;
+    margin-right: 20px;
   }
   main .last-section--row1 {
     width: 100%;
+    margin-right: 20px;
   }
   main .last-section--row2 {
-    width: auto;
+    width: 100%;
+    margin-left: -1px;
+    margin-right: 20px;
   }
   main #Activités {
     margin-left: unset;
-    margin-left: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  main #last-section {
+    all: unset;
   }
   main .last-section {
     all: unset;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -1625,28 +2062,29 @@ html footer {
   main .figure_last-section_class-generale {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
   }
   main #last-section--row1 {
     width: 100%;
-    height: 300px;
+    height: 180px;
     border-radius: 20px 20px 1px 1px;
   }
   main #last-section--row2 {
     width: 100%;
-    height: 300px;
+    height: 180px;
     border-radius: 20px 20px 1px 1px;
   }
   main .figure_last-section_row1 {
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px #DEEBFF;
     background-color: white;
-    width: 95%;
+    width: 95.5%;
     height: auto;
   }
   main .figure_last-section_row1:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1663,14 +2101,14 @@ html footer {
   }
   main .figure_last-section_row2 {
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px #DEEBFF;
     background-color: white;
-    width: 95%;
+    width: 95.5%;
     height: auto;
   }
   main .figure_last-section_row2:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1683,18 +2121,17 @@ html footer {
   main .figure_last-section_row2_caption {
     font-weight: bold;
     font-family: "Raleway";
-    margin-left: 20px;
   }
   main .figure_last-section_column10 {
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px #DEEBFF;
     background-color: white;
-    width: 95%;
+    width: 95.5%;
     height: auto;
   }
   main .figure_last-section_column10:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1711,14 +2148,14 @@ html footer {
   }
   main .figure_last-section_column11 {
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px #DEEBFF;
     background-color: white;
-    width: 95%;
+    width: 95.5%;
     height: auto;
   }
   main .figure_last-section_column11:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1735,14 +2172,14 @@ html footer {
   }
   main .figure_last-section_column20 {
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px #DEEBFF;
     background-color: white;
-    width: 95%;
+    width: 95.5%;
     height: auto;
   }
   main .figure_last-section_column20:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1759,14 +2196,14 @@ html footer {
   }
   main .figure_last-section_column21 {
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px #DEEBFF;
     background-color: white;
-    width: 95%;
+    width: 95.5%;
     height: auto;
   }
   main .figure_last-section_column21:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1793,7 +2230,7 @@ html footer {
     font-size: 40px;
   }
   main {
-    font-size: 35px;
+    font-size: 15px;
   }
   main section {
     all: unset;
@@ -1815,6 +2252,7 @@ html footer {
     width: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
+    margin-right: unset;
   }
   main .aside h1 i {
     float: right;
@@ -1827,8 +2265,9 @@ html footer {
     border-radius: 20px 1px 1px 20px;
   }
   main .aside-caption11_star {
+    all: unset;
     color: rgb(15, 68, 244);
-    font-size: 100%;
+    font-size: 12px;
   }
   main .aside-caption11_star em {
     all: unset;
@@ -1839,8 +2278,9 @@ html footer {
     font-family: "Raleway";
   }
   main .aside-caption12_star {
+    all: unset;
     color: rgb(15, 68, 244);
-    font-size: 100%;
+    font-size: 12px;
   }
   main .aside-caption12_star em {
     all: unset;
@@ -1851,8 +2291,9 @@ html footer {
     font-family: "Raleway";
   }
   main .aside-caption13_star {
+    all: unset;
     color: rgb(15, 68, 244);
-    font-size: 100%;
+    font-size: 12px;
   }
   main .aside-caption13_star em {
     all: unset;
@@ -1871,7 +2312,7 @@ html footer {
   }
   main .aside-align:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1896,7 +2337,7 @@ html footer {
     padding: 5px;
     margin: 20px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0px 0px 10px 0px #DEEBFF;
     background-color: white;
     width: 95%;
     height: auto;
@@ -1904,7 +2345,7 @@ html footer {
   }
   main .hebergement--figure:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -1920,7 +2361,7 @@ html footer {
   }
   main .figure_hebergements_bloc1_caption11_star {
     color: rgb(15, 68, 244);
-    font-size: 30px;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc1_caption11_star em {
     all: unset;
@@ -1932,7 +2373,7 @@ html footer {
   }
   main .figure_hebergements_bloc1_caption12_star {
     color: rgb(15, 68, 244);
-    font-size: 30px;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc1_caption12_star em {
     all: unset;
@@ -1944,7 +2385,7 @@ html footer {
   }
   main .figure_hebergements_bloc1_caption13_star {
     color: rgb(15, 68, 244);
-    font-size: 30px;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc1_caption13_star em {
     all: unset;
@@ -1957,7 +2398,7 @@ html footer {
   }
   main .figure_hebergements_bloc2_caption21_star {
     color: rgb(15, 68, 244);
-    font-size: 30px;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc2_caption21_star em {
     all: unset;
@@ -1969,7 +2410,7 @@ html footer {
   }
   main .figure_hebergements_bloc2_caption22_star {
     color: rgb(15, 68, 244);
-    font-size: 30px;
+    font-size: 12px;
   }
   main .figure_hebergements_bloc2_caption22_star em {
     all: unset;
@@ -1981,7 +2422,7 @@ html footer {
   }
   main .figure_hebergements_bloc2_caption23_star {
     color: #0065FC;
-    font-size: 30px;
+    font-size: 12px;
   }
   main .hebergements {
     all: unset;
@@ -2056,14 +2497,14 @@ html footer {
   }
   main .figure_last-section_row1 {
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px #DEEBFF;
     background-color: white;
     width: 98%;
     height: auto;
   }
   main .figure_last-section_row1:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -2080,14 +2521,14 @@ html footer {
   }
   main .figure_last-section_row2 {
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px #DEEBFF;
     background-color: white;
     width: 95%;
     height: auto;
   }
   main .figure_last-section_row2:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -2104,14 +2545,14 @@ html footer {
   }
   main .figure_last-section_column10 {
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px #DEEBFF;
     background-color: white;
     width: 95%;
     height: auto;
   }
   main .figure_last-section_column10:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -2128,14 +2569,14 @@ html footer {
   }
   main .figure_last-section_column11 {
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px #DEEBFF;
     background-color: white;
     width: 95%;
     height: auto;
   }
   main .figure_last-section_column11:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -2152,14 +2593,14 @@ html footer {
   }
   main .figure_last-section_column20 {
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px #DEEBFF;
     background-color: white;
     width: 95%;
     height: auto;
   }
   main .figure_last-section_column20:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -2176,14 +2617,14 @@ html footer {
   }
   main .figure_last-section_column21 {
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 1px 10px 1px #DEEBFF;
     background-color: white;
     width: 95%;
     height: auto;
   }
   main .figure_last-section_column21:hover:hover {
     background-color: #DEEBFF;
-    animation: agrand 500ms ease-out;
+    animation: agrand 300ms ease-out;
   }
   @keyframes agrand {
     0% {
@@ -2200,9 +2641,12 @@ html footer {
   }
 }
 @media screen and (min-width: 992px) {
-  footer {
-    width: 100%;
+  .foo {
+    all: unset;
     display: flex;
+    margin-left: -2.5%;
+  }
+  footer {
     background-color: #F2F2F2;
     margin-top: 50px;
     height: 100%;
@@ -2256,9 +2700,13 @@ html footer {
   }
 }
 @media screen and (max-width: 992px) {
-  footer {
-    width: 100%;
+  .foo {
+    all: unset;
     display: flex;
+    margin-left: -20px;
+  }
+  footer {
+    width: auto;
     background-color: #F2F2F2;
     margin-top: 50px;
     height: 200px;
@@ -2319,7 +2767,7 @@ html footer {
     flex-direction: column;
     background-color: #F2F2F2;
     margin-top: 50px;
-    font-size: 35px;
+    font-size: 15px;
   }
   footer div a {
     all: unset;
@@ -2369,14 +2817,77 @@ html footer {
   }
 }
 @media (max-device-width: 777px) {
+  .foo {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+  }
   footer {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
     background-color: #F2F2F2;
     margin-top: 50px;
-    font-size: 35px;
+    font-size: 15px;
+  }
+  footer div a {
+    all: unset;
+    margin-top: 10px;
+  }
+  footer .firstfooter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-family: "Raleway";
+  }
+  footer .firstfooter span {
+    margin-top: 20px;
+  }
+  footer .firstfooter :nth-child(1) {
+    font-weight: bold;
+    font-family: "Raleway";
+  }
+  footer .secondfooter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-family: "Raleway";
+  }
+  footer .secondfooter span {
+    margin-top: 20px;
+  }
+  footer .secondfooter :nth-child(1) {
+    font-weight: bold;
+    font-family: "Raleway";
+  }
+  footer .thirdfooter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-family: "Raleway";
+  }
+  footer .thirdfooter span {
+    margin-top: 20px;
+  }
+  footer .thirdfooter :nth-child(1) {
+    font-weight: bold;
+    font-family: "Raleway";
+  }
+}
+@media (max-width: 777px) {
+  .foo {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    width: auto;
+    height: auto;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+    font-size: 15px;
   }
   footer div a {
     all: unset;
