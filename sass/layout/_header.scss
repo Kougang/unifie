@@ -49,28 +49,44 @@
     display: flex;
     // border: 3px solid blue;
     height: 100px;
+    
     font-family:'Raleway';
 
 
 
     &--li{
         list-style-type: none;
+        
 
         & a{
             all:unset;
+         
         }
-
+     
     }
     &--li1{
         border-top: 3px solid $blue;
-        color:$blue
+        color:$blue;
+        width: 150px;
+        text-align: center;
     }
+    &--li2{
+        // padding-right: -40px;
+        // width: 130px;
+        // margin-right: -26px
+        width: 150px;
+
+        text-align: center;
+
+        
+    }
+    
  }
      li{
-        padding-left:30px  ;
+        
         // padding-bottom:30px  ;
         padding-top:30px  ;
-        text-align: center;
+        // text-align: center;
      }
     //  ul :nth-child(1){
     //     border-top: 2px solid $blue;
@@ -363,7 +379,7 @@ form{
 .firstblock{ 
     all: unset;
     // border: 3px solid red;
-    width:100%;
+    // width:100%;
 
    
 
@@ -406,11 +422,13 @@ form{
         border-top: 3px solid $blue;
         color:$blue
     }
+    
  }
      li{
-        padding-left:30px  ;
+        // padding-left:30px  ;
         // padding-bottom:30px  ;
         padding-top:30px  ;
+        width: 150px;
         text-align: center;
      }
     //  ul :nth-child(1){
@@ -1572,6 +1590,7 @@ input::placeholder{
  }
      li{
         padding-bottom:30px  ;
+       
         // flex-grow: stretch;
      }
      li:hover{

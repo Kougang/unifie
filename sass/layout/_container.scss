@@ -622,9 +622,9 @@ figcaption{
             &-align{
                 display: flex;
                 @include white-radius-background-aside-hebergement_tab;
-           .aside-caption11-motant1{display:block;    margin-bottom: 3px;}
-           .aside-caption12-motant2{display:block;    margin-bottom: 3px;}
-           .aside-caption13-motant3{display:block;   margin-bottom: 3px;}
+           .aside-caption11-motant1{  display:block;    margin-bottom: -2px;}
+           .aside-caption12-motant2{display:block;    margin-bottom: -2px;}
+           .aside-caption13-motant3{display:block;   margin-bottom: -2px;}
                 //agrandissement fond bleu
                 &:hover{
                     @include agrandissement_generale;
@@ -999,9 +999,7 @@ figcaption{
                 }
                 
               
-                .aside-caption11-motant1{display:block;    margin-bottom: 65px;}
-                .aside-caption12-motant2{display:block;    margin-bottom: 45px;}
-                .aside-caption13-motant3{display:block;   margin-bottom: 60px;}
+                
                 
                 &-caption11{
                    
@@ -1031,6 +1029,10 @@ figcaption{
                     @include white-radius-background-aside_mob;
                     margin-left: 20px;
                     box-shadow: 0px 0px 10px 0px $bleue-claire;
+
+                    .aside-caption11-motant1{display:block;       margin-bottom: 100px;}
+                .aside-caption12-motant2{    display:block;       margin-bottom: 100px;}
+                .aside-caption13-motant3{    display:block;       margin-bottom: 100px;}
 
                      //agrandissement fond bleu
                                      // espace entre le texte et les etoiles
